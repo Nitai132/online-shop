@@ -18,7 +18,7 @@ const countController = require('./controllers/countController');
 const path = require('path');
 const markdownpdf = require('markdown-pdf');
 
-app.use(cors({credentials: true, origin: 'http://localhost:4200'}));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
