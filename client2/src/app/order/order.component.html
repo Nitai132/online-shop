@@ -1,0 +1,60 @@
+<mat-toolbar color="primary">
+    <button mat-button class="logoutBtn" (click)="logout()" color="warn">
+        התנתק
+    </button>
+    <span id="hello">שלום {{userDetails.firstName}}</span>
+    <span id="welcome">הזן את פרטייך ובצע משלוח בקלות ובמהירות</span>
+    <span id="contact">לפרטים ובירורים: 0521234567</span>
+</mat-toolbar>
+
+<div class="cartDiv">
+    <h3>העגלה שלי</h3>
+    <h4 id="ifEmpty" *ngIf="productsDetails.length === 0">עגלת הקניות ריקה</h4>
+    <a href="/" class="returnAnchor">חזרה לחנות</a>
+    <ng-container *ngIf="productsDetails.length > 0">
+        <span *ngFor="let productDetail of productsDetails; let i = index">
+          <p *ngFor= "let product of productDetail">
+            מוצר: {{product.name}}
+            <br />
+            מחיר: {{product.price}}₪
+            <br />
+            <span class="amount" *ngIf="products[i]">כמות: {{products[i].amount}} </span>
+            <br />
+            <span class="priceTxt" *ngIf="products[i]">מחיר סופי למוצר:{{product.price*products[i].amount}}₪</span> 
+            <img class="cartImg" src="/img/{{product.img}}">
+          </p>
+        </span>
+        <h3>מחיר סופי: {{price}}₪</h3>
+        <h3 class="noChanges">אין אפשרות לבצע שינויים בעגלה</h3>
+      </ng-container>
+</div>
+
+<div class="orderDiv">
+    <br />
+    <h3>פרטי המשלוח שלי</h3>
+    <br />
+    <br />
+
+    <form class="order-form">
+        <mat-form-field>
+            <mat-label>עיר</mat-label>
+            <input matInput placeholder="לדוגמא: תל אביב-יפו" value="{{userDetails.city}}" (change)="cityChanges($event)">
+        </mat-form-field>
+        <br />
+        <br />
+        <mat-form-field class="example-full-width">
+            <mat-label>רחוב ומספר בניין\דירה</mat-label>
+            <input matInput placeholder="לדוגמא: קינג ג'ורג' 10\3" value="{{userDetails.street}}" (change)="streetChanges($event)">
+        </mat-form-field>
+        <br />
+        <br />
+        <mat-form-field appearance="fill" class="datePicker">
+            <mat-label>תאריך למשלוח</mat-label>
+            <input matInput [min]="minDate" [matDatepicker]="dp3"  (dateChange)="dateChanged($event)">
+            <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+            <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+        </mat-form-field>
+    </form>
+    <br />
+    <button (click)="order()" mat-raised-button class="purchaseBtn">אישור ומעבר לתשלום</button>
+</div>

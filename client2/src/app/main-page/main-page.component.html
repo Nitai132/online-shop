@@ -1,0 +1,51 @@
+<mat-toolbar class="toolBar">
+    <form class="login-form" *ngIf="!userDetails.firstName">
+        <mat-form-field class="example-full-width">
+          <mat-label>אימייל</mat-label>
+          <input matInput placeholder="אימייל" (change)="onEmailChange($event)">
+        </mat-form-field>
+        <br />
+        <mat-form-field>
+            <mat-label>סיסמא</mat-label>
+            <input type="password" matInput (change)="onPasswordChange($event)">
+        </mat-form-field>
+        <br />
+        <button mat-raised-button color="primary" id="login-btn" (click)="login()">
+            התחבר
+        </button>
+    </form>
+    <div *ngIf="userDetails.firstName">
+        <h5 *ngIf="userDetails.isAdmin === 0"> ברוך הבא לפרויט קאר</h5>
+        <h5 *ngIf="userDetails.isAdmin === 0" id="welcome-user"><br/> רכישה אחרונה בוצעה בתאריך</h5>
+        <h5 *ngIf="userDetails.isAdmin === 1">ברוך הבא {{userDetails.firstName}}</h5>
+    </div>
+    <!-- <button mat-button class="logoutBtn" (click)="logout()" color="warn">
+        Logout
+    </button> -->
+   <img src="/img/Logo.jpg" id="logo">
+   <button class="fb-btn" (click)="openFB()">
+    <span class="material-icons">
+        facebook
+        </span>
+    </button>
+    <button class="IG-Btn">
+        <img src="/img/instagram.png" width="40px">
+    </button>
+    <button class="IG-Btn">
+        <img src="/img/whatsapp.png" width="40px">
+    </button>
+</mat-toolbar>
+<div id="slider" style="object-fit: cover;">
+    <ng-image-slider
+    style="object-fit: cover;"
+    [images]="imageObject" #nav
+    [images]="imageObject"
+    [infinite]="true"
+    [autoSlide]="3"
+    [imageSize]="{width: '33%', height: 350}"
+    slideImage="1">
+    </ng-image-slider>
+</div>
+
+<app-cart [Product]="addedProducts" [Cart]="cart" [isAdmin]="userDetails.isAdmin" [editDetails]="itemToEdit"></app-cart>
+<app-products (productAdded)="addProductToCart($event)" (productEdit)="editProduct($event)" [isAdmin]="userDetails.isAdmin"></app-products>
