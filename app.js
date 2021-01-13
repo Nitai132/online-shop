@@ -23,6 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static("client2/dist/client2"));
 app.use(fileUpload());
 
 app.use(session({
@@ -30,7 +31,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     store: new MongoDBStore({   
-        uri: 'mongodb+srv://nitai:nitai@cluster0.hgigh.mongodb.net/project4',
+        uri: 'mongodb+srv://nitai:nitai@cluster0.hgigh.mongodb.net/FruitCart',
         collection: 'mySessions'
     }),
     cookie: {
@@ -53,13 +54,11 @@ app.use(passport.session());
 
 app.use('/api/auth', UsersController);
 app.use('/api/count', countController);
-app.use('*', isValid);
 app.use('/api/products', productsController);
-app.use('/api/orders', ordersController);
 app.use('/api/categories', categoriesController);
 app.use('/api/cart', cartController);
-
-
+app.use('*', isValid);
+app.use('/api/orders', ordersController);
 
 app.post('/api/upload', (req, res) => {
     req.files.mypic.mv(path.join(__dirname, 'public/img', req.files.mypic.name), (err) => {
@@ -80,16 +79,25 @@ app.post('/api/pdf', (req, res) => {
     });
 });
 
+app.get("/*", function(req, res) {
+    res.sendFile(path.join(__dirname, "./client2/dist/client2/index.html"));
+    let origin = req.get('origin'); 
+    res.header('Access-Control-Allow-Origin', origin);
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+  });
+
+  
 const init = async () => {
     try {
-        await mongoose.connect('mongodb+srv://nitai:nitai@cluster0.hgigh.mongodb.net/project4', {
+        await mongoose.connect('mongodb+srv://nitai:nitai@cluster0.hgigh.mongodb.net/FruitCart', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useFindAndModify: false,
             useCreateIndex: true
         });
-        app.listen('4422', (err) => {
-            console.log('Mongo server up on port: 4422');
+        app.listen(process.env.PORT || 4422, (err) => {
+            console.log('server is up');
         });
     } catch (err) {
         console.log(err);
