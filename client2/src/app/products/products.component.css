@@ -54,6 +54,8 @@
     position: relative;
     right: 35px;
     bottom: 15px;
+    color: black;
+    background-color: rgb(174, 239, 186);
 }
 
 .fruitsText {
