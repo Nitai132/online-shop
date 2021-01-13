@@ -18,7 +18,7 @@ const countController = require('./controllers/countController');
 const path = require('path');
 const markdownpdf = require('markdown-pdf');
 
-app.use(cors());
+app.use(cors({credentials: true, origin: 'http://localhost:4200'}));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
@@ -81,7 +81,7 @@ app.post('/api/pdf', (req, res) => {
 });
 
 app.get("/*", function(req, res) {
-    res.sendFile(path.join(__dirname, "client2/dist/client2/index.html"));
+    res.sendFile(path.join(__dirname, "./client2/dist/client2/index.html"));
     let origin = req.get('origin'); 
     res.header('Access-Control-Allow-Origin', origin);
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
