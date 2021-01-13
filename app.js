@@ -58,7 +58,7 @@ app.use('/api/count', countController);
 app.use('/api/products', productsController);
 app.use('/api/categories', categoriesController);
 app.use('/api/cart', cartController);
-app.use('*', isValid);
+// app.use('*', isValid);
 app.use('/api/orders', ordersController);
 
 app.post('/api/upload', (req, res) => {
