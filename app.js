@@ -18,13 +18,14 @@ const countController = require('./controllers/countController');
 const path = require('path');
 const markdownpdf = require('markdown-pdf');
 
-app.use(cors({credentials: true}));
+app.use(cors({credentials: true, origin: 'http://localhost:4200'}));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static("client2/dist/client2"));
 app.use(fileUpload());
+app.enable('trust proxy');
 
 app.use(session({
     secret: 'Nitai_Luyckx!$@#$',
