@@ -81,7 +81,7 @@ app.post('/api/pdf', (req, res) => {
 });
 
 app.get("/*", function(req, res) {
-    res.sendFile(path.join(__dirname, "client2/dist/client2/index.html"));
+    res.sendFile(path.join(__dirname, "../client2/dist/client2/index.html"));
     let origin = req.get('origin'); 
     res.header('Access-Control-Allow-Origin', origin);
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
