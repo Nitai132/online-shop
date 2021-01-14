@@ -41,10 +41,10 @@ app.use(session({
     },
   }));
 
-passport.use('local', new LocalStrategy(localStrategyHandler, {
+  passport.use('local', new LocalStrategy({
     usernameField: 'email',
     passwordField: 'passwd'
-  }));
+  } , localStrategyHandler ));
 passport.serializeUser(serializeUser);
 passport.deserializeUser(deserializeUser);
 
