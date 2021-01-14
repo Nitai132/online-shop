@@ -6,6 +6,7 @@ const User = mongoose.model('User', userSchema);
 module.exports = {
     localStrategyHandler: async (email, password, done) => {
         const user = await User.findOne({email, password});
+        console.log(email, password, user)
             if (!user) {
                 return done(null, false); // (failure)
             }
