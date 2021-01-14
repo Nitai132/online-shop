@@ -22,6 +22,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
+app.enable('trust proxy');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static("client2/dist/client2"));
 app.use(fileUpload());
@@ -30,13 +31,14 @@ app.use(session({
     secret: 'Nitai_Luyckx!$@#$',
     resave: false,
     saveUninitialized: false,
+    proxy: true,
     store: new MongoDBStore({   
         uri: 'mongodb+srv://nitai:nitai@cluster0.hgigh.mongodb.net/FruitCart',
         collection: 'mySessions'
     }),
     cookie: {
-        secure: false,
-        httpOnly: false,
+        secure: true,
+        httpOnly: true,
         maxAge: 1000 * 60000
     },
   }));
@@ -80,6 +82,10 @@ app.post('/api/pdf', (req, res) => {
 });
 
 app.get("/*", function(req, res) {
+    let origin = req.get('origin'); 
+  res.header('Access-Control-Allow-Origin', origin);
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
     res.sendFile(path.join(__dirname, "./client2/dist/client2/index.html"));
   });
 

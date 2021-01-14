@@ -48,3 +48,9 @@
     position: absolute;
     left: 100;
 }
+
+.images {
+    width: 379px;
+    height: 379px;
+    margin: auto;
+}
