@@ -20,6 +20,8 @@ export class LoginComponent implements OnInit {
   };
   order = '';
   cartDate = '';
+
+  
   logout() {
     fetch('/api/auth/logout')
     .then(() => {
