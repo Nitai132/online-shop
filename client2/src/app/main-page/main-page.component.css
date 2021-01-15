@@ -132,17 +132,17 @@
 
 @media screen and (max-width: 768px) {
     #emailInput{
-        width: 90px;
+        width: 80px;
         display:inline-block;
     }
 }
 
 @media screen and (max-width: 768px) {
     #passInput{
-        width: 90px;
+        width: 80px;
         display:inline-block;
         bottom: 40px;
-        left: 120px;
+        left: 110px;
 
     }
 }
@@ -150,7 +150,7 @@
 #logo {
     height: 320px;
     width: 740px;
-    margin-left: 230px;
+    margin-left: 200px;
 }
 
 @media screen and (max-width: 768px) {
@@ -171,7 +171,7 @@
     #login-btn {
         position: relative;
         bottom: 80px;
-        left: 230px;
+        left: 210px;
     }
 }
 
