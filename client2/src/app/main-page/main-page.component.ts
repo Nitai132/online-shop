@@ -71,7 +71,7 @@ export class MainPageComponent implements OnInit {
   logout() {
     fetch('/api/auth/logout')
     .then(() => {
-      this.router.navigate(['/login']);
+      window.location.reload();
     });
   };
 

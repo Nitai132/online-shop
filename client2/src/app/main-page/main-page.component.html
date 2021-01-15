@@ -14,18 +14,29 @@
             התחבר
         </button>
     </form>
-    <div *ngIf="userDetails.firstName">
+    <div *ngIf="userDetails.firstName" id="welcome-container">
         <h5 *ngIf="userDetails.isAdmin === 0"> ברוך הבא לפרויט קאר</h5>
         <h5 *ngIf="userDetails.isAdmin === 0" id="welcome-user"><br/> רכישה אחרונה בוצעה בתאריך</h5>
-        <h5 *ngIf="userDetails.isAdmin === 1">ברוך הבא {{userDetails.firstName}}</h5>
+        <h5 *ngIf="userDetails.isAdmin === 1" id="welcomeAdmin">ברוך הבא {{userDetails.firstName}}</h5>
+
     </div>
     <!-- <button mat-button class="logoutBtn" (click)="logout()" color="warn">
         Logout
     </button> -->
-   <img src="/img/Logo.jpg" id="logo">
-   <button class="fb-btn" (click)="openFB()">
+   <img src="/img/Logo.jpg" id="logo" *ngIf="!this.userDetails.firstName">
+   <img src="/img/Logo.jpg" id="logoLogged" *ngIf="this.userDetails.firstName">
+   <button id="logout-Btn" *ngIf="userDetails.firstName" mat-raised-button class="logoutBtn" (click)="logout()" color="warn">
+        התנתק
+    </button>
+   <button class="fb-btn-logged" (click)="openFB()" *ngIf="userDetails.firstName">
     <span class="material-icons">
         facebook
+        </span>
+    </button>
+
+    <button class="fb-btn" (click)="openFB()" *ngIf="!userDetails.firstName">
+        <span class="material-icons">
+            facebook
         </span>
     </button>
     <button class="IG-Btn">
