@@ -44,7 +44,7 @@
         border: none;
         color: blue;
         position: relative;
-        right: 640px;
+        right: 635px;
         bottom: 0;
         top: 140px;
     }
@@ -55,7 +55,7 @@
     background-color: rgb(174, 239, 186);
     border: none;
     width: 40px;
-    right: 610px;
+    right: 605px;
     bottom: 0;
     top: 140px;
 
@@ -92,10 +92,9 @@
     .WA-Btn {
         background-color: rgb(174, 239, 186);
         border: none;
-        color: blue;
         position: relative;
         size: 40px;
-        right: 590px;
+        right: 585px;
         bottom: 127px;
     }
 }
@@ -158,7 +157,7 @@
         width: 340px;
         position: relative;
         top: 10px;
-        right: 275px;
+        right: 270px;
     }
 }
 
