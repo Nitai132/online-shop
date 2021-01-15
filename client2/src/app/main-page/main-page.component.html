@@ -1,11 +1,11 @@
 <mat-toolbar class="toolBar">
     <form class="login-form" *ngIf="!userDetails.firstName">
-        <mat-form-field class="example-full-width">
+        <mat-form-field id="emailInput">
           <mat-label>אימייל</mat-label>
           <input matInput placeholder="אימייל" (change)="onEmailChange($event)">
         </mat-form-field>
         <br />
-        <mat-form-field>
+        <mat-form-field id="passInput">
             <mat-label>סיסמא</mat-label>
             <input type="password" matInput (change)="onPasswordChange($event)">
         </mat-form-field>
@@ -29,10 +29,10 @@
         </span>
     </button>
     <button class="IG-Btn">
-        <img src="/img/instagram.png" width="40px">
+        <img src="/img/instagram.png" class="IG-Img">
     </button>
-    <button class="IG-Btn">
-        <img src="/img/whatsapp.png" width="40px">
+    <button class="WA-Btn">
+        <img src="/img/whatsapp.png" class="WA-Img">
     </button>
 </mat-toolbar>
 <div id="slider" style="object-fit: cover;">

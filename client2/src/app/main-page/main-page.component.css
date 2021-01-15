@@ -3,14 +3,31 @@
     top: 0;
     background-color: rgb(174, 239, 186);
     height: 320px;
-    width: 1519px !important;
+    width: 1519px ;
+}
 
+@media screen and (max-width: 768px) {
+    .toolBar {
+        position: relative;
+        top: 0;
+        background-color: rgb(174, 239, 186);
+        height: 320px;
+        width: 120%;
+    }
 }
 
 #slider {
     position: relative;
     top: 0;
-    width: 1519px !important;
+    width: 1519px ;
+}
+
+@media screen and (max-width: 768px) {
+    #slider {
+        position: relative;
+        top: 0;
+        width: 150%;
+    }
 }
 
 .fb-btn {
@@ -18,12 +35,69 @@
     border: none;
     color: blue;
     margin-left: 100px;
+    width: 40px;
 }
+
+@media screen and (max-width: 768px) {
+    .fb-btn {
+        background-color: rgb(174, 239, 186);
+        border: none;
+        color: blue;
+        position: relative;
+        right: 540px;
+        bottom: 127px;
+    }
+}
+
 
 .IG-Btn {
     background-color: rgb(174, 239, 186);
     border: none;
+    width: 40px;
 
+}
+
+@media screen and (max-width: 768px) {
+    .IG-Btn {
+        background-color: rgb(174, 239, 186);
+        border: none;
+        position: relative;
+        right: 525px;
+        bottom: 127px;
+        size: 40px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .IG-Img {
+        width: 40px;
+    }
+}
+
+.WA-Btn {
+    background-color: rgb(174, 239, 186);
+    border: none;
+    width: 40px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .WA-Btn {
+        background-color: rgb(174, 239, 186);
+        border: none;
+        color: blue;
+        position: relative;
+        size: 40px;
+        right: 515px;
+        bottom: 127px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .WA-Img {
+        width: 40px;
+    }
 }
 
 .material-icons {
@@ -34,14 +108,59 @@
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 768px) {
+    .login-form {
+        width: 80px;
+        font-size: 10px;
+        margin-bottom: 180px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #emailInput{
+        width: 50px;
+        display:inline-block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #passInput{
+        width: 50px;
+        display:inline-block;
+        bottom: 42px;
+        left: 60px;
+
+    }
+}
+
+
 #logo {
     height: 320px;
     width: 740px;
     margin-left: 230px;
 }
 
+@media screen and (max-width: 768px) {
+    #logo {
+        height: 220px;
+        width: 340px;
+        position: relative;
+        top: 20px;
+        right: 300px;
+    }
+}
+
 #login-btn {
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #login-btn {
+        position: relative;
+        bottom: 80px;
+        left: 120px;
+    }
 }
 
 #welcome-user {
