@@ -107,7 +107,7 @@ function MainPageComponent_div_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r1.userDetails.isAdmin === 1);
 } }
-const _c0 = function () { return { width: "33%", height: 350 }; };
+const _c0 = function () { return { width: "33%", height: "40%" }; };
 class MainPageComponent {
     constructor(router) {
         this.router = router;
