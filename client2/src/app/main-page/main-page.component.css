@@ -83,7 +83,7 @@
         border: none;
         position: absolute;
         bottom: 3px;
-        left: 155px;
+        left: 150px;
     }
 }
 
@@ -180,7 +180,7 @@
 
 @media screen and (max-width: 768px) {
     #logoLogged {
-        height: 250px;
+        height: 220px;
         width: 300px;
         position: relative;
         right: 300px;
@@ -189,7 +189,7 @@
 
 @media screen and (max-width: 768px) {
     #logo {
-        height: 250px;
+        height: 220px;
         width: 300px;
         position: relative;
         right: 300px;
