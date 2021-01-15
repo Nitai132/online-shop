@@ -44,7 +44,7 @@
         border: none;
         color: blue;
         position: relative;
-        right: 660px;
+        right: 640px;
         bottom: 0;
         top: 140px;
     }
@@ -55,7 +55,7 @@
     background-color: rgb(174, 239, 186);
     border: none;
     width: 40px;
-    right: 630px;
+    right: 610px;
     bottom: 0;
     top: 140px;
 
@@ -66,7 +66,6 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: relative;
-        right: p;
         bottom: 127px;
         size: 40px;
 
@@ -83,7 +82,7 @@
     background-color: rgb(174, 239, 186);
     border: none;
     width: 40px;
-    right: 620px;
+    right: 600px;
     bottom: 0;
     top: 140px;
 
@@ -149,8 +148,8 @@
 
 #logo {
     height: 320px;
-    width: 740px;
-    margin-left: 170px;
+    width: 700px;
+    margin-left: 160px;
 }
 
 @media screen and (max-width: 768px) {
