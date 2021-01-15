@@ -23,8 +23,8 @@
     <!-- <button mat-button class="logoutBtn" (click)="logout()" color="warn">
         Logout
     </button> -->
-   <img src="/img/Logo.jpg" id="logo" *ngIf="!this.userDetails.firstName">
-   <img src="/img/Logo.jpg" id="logoLogged" *ngIf="this.userDetails.firstName">
+    <img src="/img/Logo.jpg" id="logo" *ngIf="!this.userDetails.firstName">
+    <img src="/img/Logo.jpg" id="logoLogged" *ngIf="this.userDetails.firstName">
    <button id="logout-Btn" *ngIf="userDetails.firstName" mat-raised-button class="logoutBtn" (click)="logout()" color="warn">
         התנתק
     </button>
@@ -53,7 +53,7 @@
     [images]="imageObject"
     [infinite]="true"
     [autoSlide]="3"
-    [imageSize]="{width: '33%', height: '40%'}"
+    [imageSize]="{width: '400px', height: '40%'}"
     slideImage="1">
     </ng-image-slider>
 </div>

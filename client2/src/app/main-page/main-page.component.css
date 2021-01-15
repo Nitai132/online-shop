@@ -42,7 +42,7 @@
     background-color: rgb(174, 239, 186);
     border: none;
     color: blue;
-    margin-left: 100px;
+    margin-left: 105px;
     width: 40px;
 }
 
@@ -51,7 +51,7 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: relative;
-        right: 615px;
+        right: 605px;
         bottom: 0;
         top: 140px;
     }
@@ -62,7 +62,7 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: relative;
-        right: 615px;
+        right: 605px;
         bottom: 0;
         top: 140px;
     }
@@ -83,7 +83,7 @@
         border: none;
         position: absolute;
         bottom: 3px;
-        left: 150px;
+        left: 162px;
     }
 }
 
@@ -112,7 +112,7 @@
         position: absolute;
         top: 285px;
         right: 70px;
-        left: 200px;
+        left: 210px;
     }
 }
 
@@ -183,7 +183,7 @@
         height: 220px;
         width: 300px;
         position: relative;
-        right: 300px;
+        right: 280px;
     }
 }
 
@@ -192,7 +192,7 @@
         height: 220px;
         width: 300px;
         position: relative;
-        right: 300px;
+        right: 290px;
     }
 }
 
@@ -223,7 +223,7 @@
     #welcomeAdmin {
         position: absolute;
         text-align: center;
-        left: 100px;
+        left: 130px;
         bottom: 280px;
     }
 }
