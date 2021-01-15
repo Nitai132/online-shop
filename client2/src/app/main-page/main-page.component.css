@@ -42,9 +42,8 @@
     .fb-btn {
         background-color: rgb(174, 239, 186);
         border: none;
-        color: blue;
         position: relative;
-        right: 710px;
+        right: 610px;
         bottom: 0;
         top: 140px;
     }
@@ -68,9 +67,11 @@
         position: relative;
         bottom: 127px;
         size: 40px;
-        left: 10px;
-
     }
+}
+
+.IG-Img {
+    width: 40px;
 }
 
 @media screen and (max-width: 768px) {
@@ -104,6 +105,10 @@
     .WA-Img {
         width: 25px;
     }
+}
+
+.WA-Img {
+    width: 40px;
 }
 
 .material-icons {
