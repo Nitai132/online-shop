@@ -55,7 +55,7 @@
     border: none;
     position: relative;
     width: 40px;
-    left: 70px;
+    left: 60px;
 }
 
 @media screen and (max-width: 768px) {
@@ -84,7 +84,7 @@
     border: none;
     position: relative;
     width: 40px;
-    left: 120px;
+    left: 110px;
 }
 
 @media screen and (max-width: 768px) {
@@ -159,7 +159,7 @@
         height: 220px;
         width: 300px;
         position: relative;
-        right: 145px;
+        right: 300px;
     }
 }
 
