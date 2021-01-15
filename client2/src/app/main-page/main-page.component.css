@@ -44,8 +44,9 @@
         border: none;
         color: blue;
         position: relative;
-        right: 540px;
-        bottom: 127px;
+        right: 660px;
+        bottom: 0;
+        top: 140px;
     }
 }
 
@@ -54,6 +55,9 @@
     background-color: rgb(174, 239, 186);
     border: none;
     width: 40px;
+    right: 630px;
+    bottom: 0;
+    top: 140px;
 
 }
 
@@ -62,7 +66,7 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: relative;
-        right: 535px;
+        right: 635px;
         bottom: 127px;
         size: 40px;
 
@@ -79,6 +83,9 @@
     background-color: rgb(174, 239, 186);
     border: none;
     width: 40px;
+    right: 630px;
+    bottom: 0;
+    top: 140px;
 
 }
 
@@ -89,7 +96,7 @@
         color: blue;
         position: relative;
         size: 40px;
-        right: 525px;
+        right: 600px;
         bottom: 127px;
     }
 }
@@ -125,21 +132,20 @@
 
 @media screen and (max-width: 768px) {
     #emailInput{
-        width: 50px;
+        width: 90px;
         display:inline-block;
     }
 }
 
 @media screen and (max-width: 768px) {
     #passInput{
-        width: 50px;
+        width: 90px;
         display:inline-block;
         bottom: 42px;
-        left: 60px;
+        left: 150px;
 
     }
 }
-
 
 #logo {
     height: 320px;
@@ -152,7 +158,7 @@
         height: 220px;
         width: 340px;
         position: relative;
-        top: 20px;
+        top: 10px;
         right: 300px;
     }
 }
@@ -165,7 +171,7 @@
     #login-btn {
         position: relative;
         bottom: 80px;
-        left: 120px;
+        left: 270px;
     }
 }
 
