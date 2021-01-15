@@ -43,7 +43,7 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: relative;
-        right: 610px;
+        right: 630px;
         bottom: 0;
         top: 140px;
     }
@@ -64,7 +64,7 @@
         border: none;
         position: absolute;
         bottom: 3px;
-        left: 200px;
+        left: 180px;
     }
 }
 
@@ -91,9 +91,9 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: absolute;
-        top: 282px;
+        top: 281px;
         right: 70px;
-        left: 270px;
+        left: 290px;
     }
 }
 
@@ -158,7 +158,7 @@
         height: 220px;
         width: 310px;
         position: relative;
-        right: 305px;
+        right: 315px;
     }
 }
 
