@@ -154,10 +154,10 @@
 @media screen and (max-width: 768px) {
     #logo {
         height: 220px;
-        width: 340px;
+        width: 330px;
         position: relative;
         top: 10px;
-        right: 270px;
+        right: 260px;
     }
 }
 
