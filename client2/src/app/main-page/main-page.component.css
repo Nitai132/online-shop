@@ -44,7 +44,7 @@
         border: none;
         color: blue;
         position: relative;
-        right: 660px;
+        right: 710px;
         bottom: 0;
         top: 140px;
     }
@@ -55,7 +55,7 @@
     background-color: rgb(174, 239, 186);
     border: none;
     width: 40px;
-    right: 590px;
+    right: 620px;
     bottom: 0;
     top: 140px;
 
@@ -68,6 +68,7 @@
         position: relative;
         bottom: 127px;
         size: 40px;
+        left: 10px;
 
     }
 }
@@ -94,7 +95,7 @@
         border: none;
         position: relative;
         size: 40px;
-        right: 560px;
+        right: 570px;
         bottom: 127px;
     }
 }
