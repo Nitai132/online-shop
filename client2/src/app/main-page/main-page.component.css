@@ -34,7 +34,7 @@
     background-color: rgb(174, 239, 186);
     border: none;
     color: blue;
-    margin-right: 100px;
+    margin-left: 1030px;
     width: 40px;
 }
 
@@ -42,7 +42,7 @@
     background-color: rgb(174, 239, 186);
     border: none;
     color: blue;
-    margin-right: 105px;
+    margin-left: 1100px;
     width: 40px;
 }
 
@@ -51,7 +51,7 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: relative;
-        right: 230px;
+        right: 1015px;
         bottom: 0;
         top: 140px;
     }
@@ -62,18 +62,19 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: relative;
-        right: 255px;
+        right: 1005px;
         bottom: 0;
         top: 140px;
     }
 }
 
 
+
 .IG-Btn {
     background-color: rgb(174, 239, 186);
     border: none;
     position: relative;
-    right: 50px;
+    left: 50px;
     width: 40px;
 }
 
@@ -82,7 +83,7 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: absolute;
-        bottom: 3px;
+        bottom: 5px;
         left: 162px;
     }
 }
@@ -101,7 +102,7 @@
     background-color: rgb(174, 239, 186);
     border: none;
     position: relative;
-    right: 25px;
+    left: 80px;
     width: 40px;
 }
 
@@ -110,7 +111,7 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: absolute;
-        top: 295px;
+        top: 293px;
         right: 70px;
         left: 210px;
     }
@@ -169,36 +170,20 @@
 #logo {
     height: 320px;
     width: 700px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#logoLogged {
-    height: 320px;
-    width: 700px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media screen and (max-width: 768px) {
-    #logoLogged {
-        height: 200px;
-        width: 250px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 768px) {
     #logo {
         height: 200px;
         width: 250px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
     }
 }
 

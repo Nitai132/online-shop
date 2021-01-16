@@ -14,8 +14,7 @@
             התחבר
         </button>
     </form>
-    <img src="/img/Logo.jpg" id="logo" *ngIf="!this.userDetails.firstName">
-    <img src="/img/Logo.jpg" id="logoLogged" *ngIf="this.userDetails.firstName">
+    <img src="/img/Logo.jpg" id="logo">
     <div *ngIf="userDetails.firstName" id="welcome-container">
         <h5 *ngIf="userDetails.isAdmin === 0"> ברוך הבא לפרויט קאר</h5>
         <h5 *ngIf="userDetails.isAdmin === 0" id="welcome-user"><br/> רכישה אחרונה בוצעה בתאריך</h5>
