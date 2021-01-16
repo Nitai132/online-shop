@@ -34,7 +34,8 @@
     background-color: rgb(174, 239, 186);
     border: none;
     color: blue;
-    margin-left: 1030px;
+    margin-left: 1015px;
+    margin-bottom: 6px;
     width: 40px;
 }
 
@@ -42,7 +43,8 @@
     background-color: rgb(174, 239, 186);
     border: none;
     color: blue;
-    margin-left: 1100px;
+    margin-left: 1085px;
+    margin-bottom: 6px;
     width: 40px;
 }
 
@@ -83,8 +85,9 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: absolute;
-        bottom: 4px;
-        left: 162px;
+        bottom: 1px;
+        left: 50%; 
+        transform: translate(-50%, -50%);        
     }
 }
 
@@ -111,9 +114,9 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: absolute;
-        top: 285px;
-        right: 70px;
-        left: 210px;
+        top: 287px;
+        left: 70%; 
+        transform: translate(-50%);   
     }
 }
 
