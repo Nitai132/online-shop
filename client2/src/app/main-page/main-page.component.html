@@ -4,20 +4,17 @@
           <mat-label>אימייל</mat-label>
           <input matInput placeholder="אימייל" (change)="onEmailChange($event)">
         </mat-form-field>
-        <br />
         <mat-form-field id="passInput">
             <mat-label>סיסמא</mat-label>
             <input type="password" matInput (change)="onPasswordChange($event)">
         </mat-form-field>
-        <br />
         <button mat-raised-button color="primary" id="login-btn" (click)="login()">
             התחבר
         </button>
     </form>
     <img src="/img/Logo.jpg" id="logo">
     <div *ngIf="userDetails.firstName" id="welcome-container">
-        <h5 *ngIf="userDetails.isAdmin === 0"> ברוך הבא לפרויט קאר</h5>
-        <h5 *ngIf="userDetails.isAdmin === 0" id="welcome-user"><br/> רכישה אחרונה בוצעה בתאריך</h5>
+        <h5 *ngIf="userDetails.isAdmin === 0" id="welcome-user"> ברוך הבא {{userDetails.firstName}}</h5>
         <h5 *ngIf="userDetails.isAdmin === 1" id="welcomeAdmin">ברוך הבא {{userDetails.firstName}}</h5>
 
     </div>
