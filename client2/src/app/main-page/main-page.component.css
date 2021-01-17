@@ -11,7 +11,7 @@
         position: relative;
         top: 0;
         background-color: rgb(174, 239, 186);
-        height: 320px;
+        height: 250px;
         width: 100%;
     }
 }
@@ -53,9 +53,9 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: relative;
-        right: 890px;
+        right: 880px;
         bottom: 0;
-        top: 140px;
+        top: 96px;
     }
 }
 
@@ -64,9 +64,9 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: relative;
-        right: 1005px;
+        right: 1000px;
         bottom: 0;
-        top: 140px;
+        top: 96px;
     }
 }
 
@@ -114,8 +114,9 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: absolute;
-        top: 287px;
-        left: 70%; 
+        bottom: 0;
+        bottom: 15px;
+        left: 67%; 
         transform: translate(-50%);   
     }
 }
@@ -148,7 +149,7 @@
     .login-form {
         width: 80px;
         font-size: 10px;
-        margin-bottom: 180px;
+        margin-bottom: 140px;
     }
 }
 
@@ -193,7 +194,7 @@
 
 @media screen and (max-width: 768px) {
     #logo {
-        height: 200px;
+        height: 150px;
         width: 250px;
         position: absolute;
         top: 50%;
@@ -236,7 +237,7 @@
         position: absolute;
         text-align: center;
         left: 130px;
-        bottom: 280px;
+        bottom: 200px;
     }
 }
 
@@ -249,6 +250,6 @@
 @media screen and (max-width: 768px) {
     #logout-Btn {
         position: absolute;
-        bottom: 275px;
+        bottom: 200px;
     }
 }
