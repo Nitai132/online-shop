@@ -7,6 +7,12 @@
     width: 400px;
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        width: 377px;
+    }
+}
+
 .expansion {
     height: 100%;
     background-color: rgb(174, 239, 186);

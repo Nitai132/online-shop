@@ -4,6 +4,21 @@
     left: 680px;
 }
 
+@media screen and (max-width: 768px) {
+    .categories-container {
+        position:static;
+        width: 100%;
+        height: 100px;
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .categories {
+        position: relative;
+    }
+}
+
 .categories {
     color: black;
     background-color: rgb(174, 239, 186);
@@ -14,6 +29,14 @@
     width: 59%;
     top: 430px;
     left: 620px;
+}
+
+@media screen and (max-width: 768px) {
+    .products-container {
+        position: static;
+        width: 50%;
+        margin: auto;
+    }
 }
 
 .card{
@@ -64,10 +87,20 @@
     top: 0;
     top: 100px;
 }
+
 .searchInput {
     position: relative;
     right: 160px;
     bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .searchInput {
+        position: relative;
+        width: 200%;
+        left: 1px;
+        bottom: 20px;
+    }
 }
 
 .search {
