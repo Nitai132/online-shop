@@ -116,7 +116,7 @@
         position: absolute;
         bottom: 0;
         bottom: 15px;
-        left: 60%; 
+        left: 62%; 
         transform: translate(-50%);   
     }
 }
@@ -236,7 +236,7 @@
     #welcomeAdmin {
         position: absolute;
         text-align: center;
-        left: 130px;
+        left: 100px;
         bottom: 200px;
     }
 }
