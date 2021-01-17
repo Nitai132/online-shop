@@ -54,7 +54,7 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: relative;
-        right: 880px;
+        right: 860px;
         bottom: 0;
         top: 96px;
     }
@@ -65,7 +65,7 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: relative;
-        right: 1000px;
+        right: 980px;
         bottom: 0;
         top: 96px;
     }
@@ -116,7 +116,7 @@
         border: none;
         position: absolute;
         bottom: 0;
-        bottom: 15px;
+        bottom: 16px;
         left: 62%; 
         transform: translate(-50%);   
     }
