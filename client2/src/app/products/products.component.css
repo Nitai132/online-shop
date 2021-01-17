@@ -99,8 +99,8 @@
     .searchInput {
         position: relative;
         width: 200%;
-        right: 50px;
         bottom: 20px;
+        left: 50px;
     }
 }
 
