@@ -53,7 +53,7 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: relative;
-        right: 1015px;
+        right: 890px;
         bottom: 0;
         top: 140px;
     }
@@ -85,7 +85,7 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: absolute;
-        bottom: 1px;
+        bottom: 0;
         left: 50%; 
         transform: translate(-50%, -50%);        
     }
@@ -161,13 +161,16 @@
 #passInput{
     width: 80px;
     padding: 20px;
+    margin-top: 15px;
 
 }
 
 @media screen and (max-width: 768px) {
     #emailInput{
         width: 80px;
+        position: relative;
         display:inline-block;
+        bottom: 40px;
     }
 }
 
@@ -176,8 +179,6 @@
         width: 80px;
         display:inline-block;
         bottom: 40px;
-        left: 110px;
-
     }
 }
 
@@ -208,8 +209,7 @@
 @media screen and (max-width: 768px) {
     #login-btn {
         position: relative;
-        bottom: 80px;
-        left: 210px;
+        bottom: 38px;
     }
 }
 
@@ -244,4 +244,11 @@
     position: absolute;
     left: 0;
     left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #logout-Btn {
+        position: absolute;
+        bottom: 275px;
+    }
 }
