@@ -3,7 +3,7 @@
     top: 0;
     background-color: rgb(174, 239, 186);
     height: 100px;
-    width: 1519px ;
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {
