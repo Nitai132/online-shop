@@ -1,7 +1,7 @@
 .categories-container {
     position: absolute;
     bottom: 300px;
-    left: 680px;
+    left: 660px;
 }
 
 @media screen and (max-width: 768px) {
@@ -81,7 +81,6 @@
     text-align: center;
     display: inline;
     bottom: 20px;
-    left: 10px;
 }
 
 
@@ -92,22 +91,20 @@
 }
 
 .product-price {
+    text-align: center;
     position: relative;
-    bottom: 220px;
-    left: 50px;
+    bottom: 200px;
 }
+
 @media screen and (max-width: 768px) {
     .product-price {
-        position: relative;
-        bottom: 250px;
         left: 0px;
+        bottom: 250px;
     }
 }
 
 .addBTN {
     position: relative;
-    right: 35px;
-    bottom: 15px;
     width: 80px;
     color: black;
     background-color: rgb(174, 239, 186);
@@ -150,3 +147,11 @@ button.mat-button {
     border-radius: 0;
  }
 
+.btn-align {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

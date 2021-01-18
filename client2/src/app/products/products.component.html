@@ -13,12 +13,14 @@
     <div *ngIf = "filteredArray.length == products.length">
         <div class ="card" *ngFor = "let product of products">
             <div class="column">
-            <h4 class= "product-title">{{product.name}}</h4>
-                <img class="img" src="/img/{{product.img}}">
-            <span class="product-price">מחיר: ₪{{product.price}}</span>
-            <button *ngIf="isAdmin === 0"class="addBTN" mat-raised-button color="primary" (click)="addProductToCart(product._id)">הוסף לעגלה</button>
-            <button *ngIf="!isAdmin && isAdmin !== 0"class="addBTN" mat-fab color="primary" (click)="unsignedAlert()">הוסף לעגלה</button>
-            <button *ngIf="isAdmin === 1"class="addBTN" mat-raised-button color="warn" (click)="editProduct(product._id, product.name, product.price, product.img)">ערוך מוצר</button>
+                <h4 class= "product-title">{{product.name}}</h4>
+                    <img class="img" src="/img/{{product.img}}">
+                <span class="product-price">מחיר: ₪{{product.price}}</span>
+                <div class="btn-align">
+                    <button *ngIf="isAdmin === 0"class="addBTN" mat-raised-button color="primary" (click)="addProductToCart(product._id)">הוסף לעגלה</button>
+                    <button *ngIf="!isAdmin && isAdmin !== 0"class="addBTN" mat-fab color="primary" (click)="unsignedAlert()">הוסף לעגלה</button>
+                    <button *ngIf="isAdmin === 1"class="addBTN" mat-raised-button color="warn" (click)="editProduct(product._id, product.name, product.price, product.img)">ערוך מוצר</button>
+                </div>
             </div>
         </div>
     </div>
