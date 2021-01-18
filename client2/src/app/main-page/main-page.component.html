@@ -25,15 +25,10 @@
         התנתק
     </button>
    <button class="fb-btn-logged" (click)="openFB()" *ngIf="userDetails.firstName">
-    <span class="material-icons">
-        facebook
-        </span>
+        <img src="/img/facebook.png" class="fb-Img">
     </button>
-
     <button class="fb-btn" (click)="openFB()" *ngIf="!userDetails.firstName">
-        <span class="material-icons">
-            facebook
-        </span>
+        <img src="/img/facebook.png" class="fb-Img">
     </button>
     <button class="IG-Btn">
         <img src="/img/instagram.png" class="IG-Img">

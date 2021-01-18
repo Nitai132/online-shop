@@ -36,7 +36,6 @@
     border: none;
     color: blue;
     margin-left: 884px;
-    margin-bottom: 5px;
     width: 40px;
 }
 
@@ -45,7 +44,6 @@
     border: none;
     color: blue;
     margin-left: 1085px;
-    margin-bottom: 6px;
     width: 40px;
 }
 
@@ -53,10 +51,11 @@
     .fb-btn {
         background-color: rgb(174, 239, 186);
         border: none;
-        position: relative;
-        right: 860px;
+        position: absolute;
         bottom: 0;
-        top: 96px;
+        left: 40%; 
+        margin-left: 0px;
+        transform: translate(-50%, -50%);  
     }
 }
 
@@ -71,13 +70,11 @@
     }
 }
 
-
-
 .IG-Btn {
     background-color: rgb(174, 239, 186);
     border: none;
     position: relative;
-    left: 50px;
+    left: 40px;
     width: 40px;
 }
 
@@ -115,9 +112,8 @@
         background-color: rgb(174, 239, 186);
         border: none;
         position: absolute;
-        bottom: 0;
-        bottom: 16px;
-        left: 62%; 
+        bottom: 11.5px;
+        left: 60%; 
         transform: translate(-50%);   
     }
 }
