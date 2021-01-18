@@ -34,23 +34,32 @@
 @media screen and (max-width: 768px) {
     .products-container {
         position: static;
-        width: 50%;
-        margin: auto;
-        margin-left: 50px;
+        width: 100%;
+        top: 0;
+        left: 0;
     }
 }
 
 .card{
     background-color:rgb(228,201,192);
+    
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 20px;
     text-align: center;
-    display: inline-table;
-    position: relative;
-    padding: 50px;
-    padding-bottom: 50px;
-    width: 33%;
-    height: 33%;
     box-sizing: border-box;
     border: 1px rgb(228,201,192);
+  }
+
+@media screen and (max-width: 768px) {
+    .column{
+        width: 50%;
+        display: inline;
+        float: left;
+    }
 }
 
 .img {
@@ -58,18 +67,41 @@
     height: 150px;
     padding: 20px;
 }
+@media screen and (max-width: 768px) {
+    .img {
+        height: 200px;
+        position: relative;
+        right: 20px;
+        width: 100%;
+    }
+}
 
 .product-title {
     position: relative;
     text-align: center;
     display: inline;
-    bottom: 30px;
+    bottom: 20px;
+    left: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .product-title {
+        left: 0px;
+    }
 }
 
 .product-price {
     position: relative;
     bottom: 220px;
     left: 50px;
+}
+@media screen and (max-width: 768px) {
+    .product-price {
+        position: relative;
+        bottom: 250px;
+        left: 0px;
+    }
 }
 
 .addBTN {
@@ -79,6 +111,12 @@
     width: 80px;
     color: black;
     background-color: rgb(174, 239, 186);
+}
+
+@media screen and (max-width: 768px) {
+    .addBTN {
+        right: 0px;
+    }
 }
 
 .fruitsText {
@@ -100,7 +138,7 @@
         position: relative;
         width: 200%;
         bottom: 20px;
-        left: 50px;
+        left: 90px;
     }
 }
 
