@@ -234,6 +234,15 @@
     left: 300px;
 }
 
+@media screen and (max-width: 768px) {
+    #welcome-user {
+        position: absolute;
+        text-align: center;
+        left: 110px;
+        bottom: 200px;
+    }
+}
+
 .images {
     width: 379px;
     height: 379px;

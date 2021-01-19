@@ -4,6 +4,22 @@
     bottom: 7%;
 }
 
+.categories-container-admin {
+    position: absolute;
+    left: 43.5%;;
+    bottom: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .categories-container-admin {
+        position: absolute;
+        overflow:auto;
+        width: 30%;
+        height: 100px;
+        top: 71%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .categories-container {
         position:static;

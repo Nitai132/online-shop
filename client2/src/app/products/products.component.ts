@@ -19,7 +19,7 @@ export class ProductsComponent implements OnInit {
   constructor() { }
   @Output() productAdded = new EventEmitter<string>();
   @Output() productEdit = new EventEmitter<object>();
-  @Input() isAdmin: String;
+  @Input() isAdmin: Number;
 
 
   filterProducts({target: {value}}) {
