@@ -2232,7 +2232,7 @@ function ProductsComponent_div_8_Template(rf, ctx) { if (rf & 1) {
 } }
 function ProductsComponent_div_9_div_1_button_8_Template(rf, ctx) { if (rf & 1) {
     const _r35 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 26);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 23);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ProductsComponent_div_9_div_1_button_8_Template_button_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r35); const ctx_r34 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3); return ctx_r34.editProduct(ctx_r34.product._id, ctx_r34.product.name, ctx_r34.product.price, ctx_r34.product.img); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "\u05E2\u05E8\u05D5\u05DA \u05DE\u05D5\u05E6\u05E8");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2246,7 +2246,7 @@ function ProductsComponent_div_9_div_1_button_9_Template(rf, ctx) { if (rf & 1) 
 } }
 function ProductsComponent_div_9_div_1_button_10_Template(rf, ctx) { if (rf & 1) {
     const _r40 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 27);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ProductsComponent_div_9_div_1_button_10_Template_button_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r40); const prod_r30 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit; const ctx_r38 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r38.addProductToCart(prod_r30._id); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "\u05D4\u05D5\u05E1\u05E3 \u05DC\u05E2\u05D2\u05DC\u05D4");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2262,9 +2262,9 @@ function ProductsComponent_div_9_div_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 19);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, ProductsComponent_div_9_div_1_button_8_Template, 2, 0, "button", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, ProductsComponent_div_9_div_1_button_8_Template, 2, 0, "button", 21);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, ProductsComponent_div_9_div_1_button_9_Template, 2, 0, "button", 20);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, ProductsComponent_div_9_div_1_button_10_Template, 2, 0, "button", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, ProductsComponent_div_9_div_1_button_10_Template, 2, 0, "button", 20);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2351,7 +2351,7 @@ class ProductsComponent {
     }
 }
 ProductsComponent.ɵfac = function ProductsComponent_Factory(t) { return new (t || ProductsComponent)(); };
-ProductsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ProductsComponent, selectors: [["app-products"]], inputs: { isAdmin: "isAdmin" }, outputs: { productAdded: "productAdded", productEdit: "productEdit" }, decls: 10, vars: 4, consts: [["class", "categories-container", 4, "ngIf"], ["class", "categories-container-admin", 4, "ngIf"], [1, "products-container"], [1, "search"], [1, "searchInput"], ["matInput", "", "placeholder", "\u05DC\u05D3\u05D5\u05D2\u05DE\u05D0: \u05D0\u05D1\u05D8\u05D9\u05D7", 3, "keyup"], [4, "ngIf"], [1, "categories-container"], ["name", "fontStyle", "aria-label", "Font Style", 3, "value"], ["group", "matButtonToggleGroup"], ["class", "categories", 3, "value", "click", 4, "ngFor", "ngForOf"], [1, "categories", 3, "value", "click"], [1, "categories-container-admin"], ["class", "card", 4, "ngFor", "ngForOf"], [1, "card"], [1, "column"], [1, "product-title"], [1, "img", 3, "src"], [1, "product-price"], [1, "btn-align"], ["class", "addBTN", "mat-fab", "", "color", "primary", 3, "click", 4, "ngIf"], ["class", "addBTN", "mat-raised-button", "", "color", "warn", 3, "click", 4, "ngIf"], ["mat-fab", "", "color", "primary", 1, "addBTN", 3, "click"], ["mat-raised-button", "", "color", "warn", 1, "addBTN", 3, "click"], ["class", "addBTN", "mat-fab", "", "color", "warn", 3, "click", 4, "ngIf"], ["class", "addBTN", "mat-raised-button", "", "color", "primary", 3, "click", 4, "ngIf"], ["mat-fab", "", "color", "warn", 1, "addBTN", 3, "click"], ["mat-raised-button", "", "color", "primary", 1, "addBTN", 3, "click"]], template: function ProductsComponent_Template(rf, ctx) { if (rf & 1) {
+ProductsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ProductsComponent, selectors: [["app-products"]], inputs: { isAdmin: "isAdmin" }, outputs: { productAdded: "productAdded", productEdit: "productEdit" }, decls: 10, vars: 4, consts: [["class", "categories-container", 4, "ngIf"], ["class", "categories-container-admin", 4, "ngIf"], [1, "products-container"], [1, "search"], [1, "searchInput"], ["matInput", "", "placeholder", "\u05DC\u05D3\u05D5\u05D2\u05DE\u05D0: \u05D0\u05D1\u05D8\u05D9\u05D7", 3, "keyup"], [4, "ngIf"], [1, "categories-container"], ["name", "fontStyle", "aria-label", "Font Style", 3, "value"], ["group", "matButtonToggleGroup"], ["class", "categories", 3, "value", "click", 4, "ngFor", "ngForOf"], [1, "categories", 3, "value", "click"], [1, "categories-container-admin"], ["class", "card", 4, "ngFor", "ngForOf"], [1, "card"], [1, "column"], [1, "product-title"], [1, "img", 3, "src"], [1, "product-price"], [1, "btn-align"], ["class", "addBTN", "mat-fab", "", "color", "primary", 3, "click", 4, "ngIf"], ["class", "addBTN", "mat-fab", "", "color", "warn", 3, "click", 4, "ngIf"], ["mat-fab", "", "color", "primary", 1, "addBTN", 3, "click"], ["mat-fab", "", "color", "warn", 1, "addBTN", 3, "click"]], template: function ProductsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, ProductsComponent_div_0_Template, 4, 2, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, ProductsComponent_div_1_Template, 4, 2, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);

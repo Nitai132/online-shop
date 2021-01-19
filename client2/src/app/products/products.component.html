@@ -24,7 +24,7 @@
                 <div class="btn-align">
                     <button *ngIf="isAdmin === 0" class="addBTN" mat-fab color="primary" (click)="addProductToCart(product._id)">הוסף לעגלה</button>
                     <button *ngIf="!isAdmin && isAdmin !== 0" class="addBTN" mat-fab color="primary" (click)="unsignedAlert()">הוסף לעגלה</button>
-                    <button *ngIf="isAdmin === 1" class="addBTN" mat-raised-button color="warn" (click)="editProduct(product._id, product.name, product.price, product.img)">ערוך מוצר</button>
+                    <button *ngIf="isAdmin === 1" class="addBTN" mat-fab color="warn" (click)="editProduct(product._id, product.name, product.price, product.img)">ערוך מוצר</button>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
                 <div class="btn-align">
                     <button *ngIf="isAdmin === 1" class="addBTN" mat-fab color="warn" (click)="editProduct(product._id, product.name, product.price, product.img)">ערוך מוצר</button>
                     <button *ngIf="!isAdmin && isAdmin !== 0" class="addBTN" mat-fab color="primary" (click)="unsignedAlert()">הוסף לעגלה</button>
-                    <button *ngIf="isAdmin === 0" class="addBTN" mat-raised-button color="primary" (click)="addProductToCart(prod._id)">הוסף לעגלה</button>
+                    <button *ngIf="isAdmin === 0" class="addBTN" mat-fab color="primary" (click)="addProductToCart(prod._id)">הוסף לעגלה</button>
                 </div>
             </div>
         </div>
