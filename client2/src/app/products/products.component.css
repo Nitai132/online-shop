@@ -39,6 +39,7 @@
 .categories {
     color: black;
     background-color: rgb(174, 239, 186);
+    font-family: 'Assistant', sans-serif;
 }
 
 .products-container {
@@ -98,6 +99,8 @@
     text-align: center;
     display: inline;
     bottom: 20px;
+    font-family: 'Assistant', sans-serif;
+
 }
 
 
@@ -111,6 +114,8 @@
     text-align: center;
     position: relative;
     bottom: 200px;
+    font-family: 'Assistant', sans-serif;
+
 }
 
 @media screen and (max-width: 768px) {
