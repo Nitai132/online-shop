@@ -45,7 +45,7 @@
 .products-container {
     position: absolute;
     width: 59%;
-    top: 370px;
+    top: 450px;
     left: 620px;
 }
 
@@ -145,7 +145,7 @@
 .searchInput {
     position: relative;
     right: 170px;
-    top: 40px;
+    bottom: 40px;
 }
 
 @media screen and (max-width: 768px) {
