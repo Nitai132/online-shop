@@ -14,6 +14,7 @@ import {MatDatepickerModule, } from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core'
 import {MatSelectModule} from '@angular/material/select';
 import { NgImageSliderModule } from 'ng-image-slider';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -50,6 +51,7 @@ import { OrderComponent } from './order/order.component';
     MatButtonToggleModule,
     MatCardModule,
     MatIconModule,
+    MatGridListModule,
     MatDatepickerModule,
     MatNativeDateModule,
     MatSelectModule,

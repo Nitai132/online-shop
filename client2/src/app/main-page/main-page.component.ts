@@ -21,25 +21,21 @@ export class MainPageComponent implements OnInit {
   addedProducts = [];
   itemToEdit = {};
   imageObject = [{
-    image: '/img/fruits.jpg',
-    thumbImage: '/img/fruits.jpg',
-    title: 'פירות יער',
+    image: '/img/mainImg1.jpg',
+    thumbImage: '/img/mainImg1.jpg',
     alt: 'Image alt'
   },{
-    image: '/img/ninja.jpg',
-    thumbImage: '/img/ninja.jpg',
+    image: '/img/mainImg2.jpg',
+    thumbImage: '/img/mainImg2.jpg',
     alt: 'alt of image',
-    title: 'ירקות בבלנדר',
+  },{
+    image: '/img/mainImg3.jpg',
+    thumbImage: '/img/mainImg3.jpg',
+    alt: 'alt of image',
   },{
     image: '/img/shake.jpg',
     thumbImage: '/img/shake.jpg',
     alt: 'alt of image',
-    title: 'שייק פירות',
-  },{
-    image: '/img/icecream.jpg',
-    thumbImage: '/img/icecream.jpg',
-    alt: 'alt of image',
-    title: "גלידות בייתיות",
   }]
 
 

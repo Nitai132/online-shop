@@ -1,6 +1,6 @@
 .categories-container {
     position: absolute;
-    left: 43.5%;;
+    left: 44.5%;;
     bottom: 40%;
 }
 
@@ -38,7 +38,7 @@
 
 .categories {
     color: black;
-    background-color: rgb(174, 239, 186);
+    background-color:rgb(153,255,204);
     font-family: 'Assistant', sans-serif;
 }
 
@@ -58,18 +58,13 @@
     }
 }
 
-.card{
-    background-color:rgb(228,201,192);
-    
-}
-
 .column {
     float: left;
     width: 25%;
     padding: 20px;
     text-align: center;
     box-sizing: border-box;
-    border: 1px rgb(228,201,192);
+    border: 1px white;
   }
 
 @media screen and (max-width: 768px) {
@@ -98,7 +93,7 @@
     position: relative;
     text-align: center;
     display: inline;
-    bottom: 20px;
+    top: 200px;
     font-family: 'Assistant', sans-serif;
 
 }
@@ -113,7 +108,7 @@
 .product-price {
     text-align: center;
     position: relative;
-    bottom: 200px;
+    top: 10px;
     font-family: 'Assistant', sans-serif;
 
 }
@@ -127,9 +122,10 @@
 
 .addBTN {
     position: relative;
-    width: 80px;
+    width: 80%;
+    top: 30px;
     color: black;
-    background-color: rgb(174, 239, 186);
+    background-color: rgb(153,255,204);
 }
 
 @media screen and (max-width: 768px) {

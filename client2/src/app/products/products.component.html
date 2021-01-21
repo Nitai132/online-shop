@@ -11,7 +11,10 @@
 <div class="products-container">
     <form class="search">
         <mat-form-field class="searchInput">
-          <mat-label>חיפוש מוצר</mat-label>
+          <mat-label>
+            <span class="material-icons">
+                search
+            </span></mat-label>
           <input  (keyup)="filterProducts($event)" matInput placeholder="לדוגמא: אבטיח">
         </mat-form-field>
     </form>
@@ -22,9 +25,9 @@
                 <img class="img" src="/img/{{product.img}}">
                 <span class="product-price">מחיר: ₪{{product.price}}</span>
                 <div class="btn-align">
-                    <button *ngIf="isAdmin === 0" class="addBTN" mat-fab color="primary" (click)="addProductToCart(product._id)">הוסף לעגלה</button>
-                    <button *ngIf="!isAdmin && isAdmin !== 0" class="addBTN" mat-fab color="primary" (click)="unsignedAlert()">הוסף לעגלה</button>
-                    <button *ngIf="isAdmin === 1" class="addBTN" mat-fab color="warn" (click)="editProduct(product._id, product.name, product.price, product.img)">ערוך מוצר</button>
+                    <button *ngIf="isAdmin === 0" class="addBTN" mat-raised-button color="primary" (click)="addProductToCart(product._id)">הוסף לעגלה</button>
+                    <button *ngIf="!isAdmin && isAdmin !== 0" class="addBTN" mat-raised-button color="primary" (click)="unsignedAlert()">הוסף לעגלה</button>
+                    <button *ngIf="isAdmin === 1" class="addBTN" mat-raised-button color="warn" (click)="editProduct(product._id, product.name, product.price, product.img)">ערוך מוצר</button>
                 </div>
             </div>
         </div>
@@ -36,9 +39,9 @@
                 <img class="img" src="/img/{{prod.img}}">
                 <span class="product-price">מחיר: ₪{{prod.price}}</span>
                 <div class="btn-align">
-                    <button *ngIf="isAdmin === 1" class="addBTN" mat-fab color="warn" (click)="editProduct(product._id, product.name, product.price, product.img)">ערוך מוצר</button>
-                    <button *ngIf="!isAdmin && isAdmin !== 0" class="addBTN" mat-fab color="primary" (click)="unsignedAlert()">הוסף לעגלה</button>
-                    <button *ngIf="isAdmin === 0" class="addBTN" mat-fab color="primary" (click)="addProductToCart(prod._id)">הוסף לעגלה</button>
+                    <button *ngIf="isAdmin === 1" class="addBTN" mat-raised-button color="warn" (click)="editProduct(product._id, product.name, product.price, product.img)">ערוך מוצר</button>
+                    <button *ngIf="!isAdmin && isAdmin !== 0" class="addBTN" mat-raised-button color="primary" (click)="unsignedAlert()">הוסף לעגלה</button>
+                    <button *ngIf="isAdmin === 0" class="addBTN" mat-raised-button color="primary" (click)="addProductToCart(prod._id)">הוסף לעגלה</button>
                 </div>
             </div>
         </div>

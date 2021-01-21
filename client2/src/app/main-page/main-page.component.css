@@ -1,7 +1,7 @@
 .toolBar {
     position: relative;
     top: 0;
-    background-color: rgb(174, 239, 186);
+    background-color:rgb(153,255,204);
     height: 100px;
     width: 100%;
 }
@@ -10,8 +10,8 @@
     .toolBar {
         position: relative;
         top: 0;
-        background-color: rgb(174, 239, 186);
-        height: 250px;
+        background-color: rgb(153,255,204);
+        height: 170px;
         width: 100%;
     }
 }
@@ -42,7 +42,7 @@
 }
 
 .fb-btn {
-    background-color: rgb(174, 239, 186);
+    background-color: rgb(153,255,204);
     border: none;
     color: blue;
     margin-left: 884px;
@@ -50,7 +50,7 @@
 }
 
 .fb-btn-logged {
-    background-color: rgb(174, 239, 186);
+    background-color:rgb(153,255,204);
     border: none;
     color: blue;
     margin-left: 1085px;
@@ -60,12 +60,11 @@
 
 @media screen and (max-width: 768px) {
     .fb-btn {
-        background-color: rgb(174, 239, 186);
+        background-color: rgb(153,255,204);
         border: none;
-        position: absolute;
-        bottom: 0;
-        bottom: 1px;
-        left: 40%; 
+        position: relative;
+        left: 40%;
+        bottom: 5%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
         width: 40px;
@@ -74,12 +73,11 @@
 
 @media screen and (max-width: 768px) {
     .fb-btn-logged {
-        background-color: rgb(174, 239, 186);
+        background-color: rgb(153,255,204);
         border: none;
-        position: absolute;
-        bottom: 0;
-        bottom: 1px;
-        left: 40%; 
+        position: relative;
+        left: 40%;
+        bottom: 5%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
         width: 40px;
@@ -87,7 +85,7 @@
 }
 
 .IG-Btn {
-    background-color: rgb(174, 239, 186);
+    background-color: rgb(153,255,204);
     border: none;
     position: relative;
     left: 40px;
@@ -96,12 +94,14 @@
 
 @media screen and (max-width: 768px) {
     .IG-Btn {
-        background-color: rgb(174, 239, 186);
+        background-color: rgb(153,255,204);
         border: none;
-        position: absolute;
-        bottom: 0;
-        left: 50%; 
-        transform: translate(-50%, -50%);        
+        position: relative;
+        left: 40%;
+        bottom: 5%;
+        margin-left: 0px;
+        transform: translate(-50%, -50%);  
+        width: 40px;     
     }
 }
 
@@ -116,7 +116,7 @@
 }
 
 .WA-Btn {
-    background-color: rgb(174, 239, 186);
+    background-color:rgb(153,255,204);
     border: none;
     position: relative;
     left: 80px;
@@ -125,12 +125,14 @@
 
 @media screen and (max-width: 768px) {
     .WA-Btn {
-        background-color: rgb(174, 239, 186);
+        background-color: rgb(153,255,204);
         border: none;
-        position: absolute;
-        bottom: 16px;
-        left: 60%; 
-        transform: translate(-50%);   
+        position: relative;
+        left: 40%;
+        bottom: 5%;
+        margin-left: 0px;
+        transform: translate(-50%, -50%);  
+        width: 40px;
     }
 }
 
@@ -162,7 +164,7 @@
     .login-form {
         width: 80px;
         font-size: 10px;
-        margin-bottom: 140px;
+        margin-top: 210px;
     }
 }
 
@@ -185,6 +187,7 @@
         position: relative;
         display:inline-block;
         bottom: 40px;
+        right: 35%;
     }
 }
 
@@ -193,6 +196,7 @@
         width: 80px;
         display:inline-block;
         bottom: 40px;
+        right: 65%;
     }
 }
 
@@ -207,24 +211,29 @@
 
 @media screen and (max-width: 768px) {
     #logo {
-        height: 150px;
-        width: 250px;
+        height: 140px;
+        width: 210px;
         position: absolute;
-        top: 50%;
-        left: 50%; 
-        transform: translate(-50%, -50%);
+        float: left;
+        left: 0; 
+        top: 0;
+        transform: none;
     }
 }
 
 #login-btn {
-    width: 30%;
+    width: 50%;
+    background-color: grey;
+    
 }
 
 @media screen and (max-width: 768px) {
     #login-btn {
         position: relative;
-        left: 20px;
-        bottom: 38px;
+        right: 50px;
+        bottom: 37px;
+        width: 170%;
+        
     }
 }
 

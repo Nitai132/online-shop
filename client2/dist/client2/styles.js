@@ -569,7 +569,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 ___CSS_LOADER_EXPORT___.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "html, body { height: 100%; }\n\nbody { margin: 0; font-family: Roboto, \"Helvetica Neue\", sans-serif; }\n\nhtml { background-color: rgb(228,201,192);} ", "",{"version":3,"sources":["webpack://src/styles.css"],"names":[],"mappings":"AAEA,aAAa,YAAY,EAAE;;AAC3B,OAAO,SAAS,EAAE,iDAAiD,EAAE;;AACrE,OAAO,kCAAkC,CAAC","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');\n\nhtml, body { height: 100%; }\nbody { margin: 0; font-family: Roboto, \"Helvetica Neue\", sans-serif; }\nhtml { background-color: rgb(228,201,192);} "],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "html, body { height: 100%; }\n\nbody { margin: 0; font-family: Roboto, \"Helvetica Neue\", sans-serif; }\n\nhtml { background-color: white} ", "",{"version":3,"sources":["webpack://src/styles.css"],"names":[],"mappings":"AAEA,aAAa,YAAY,EAAE;;AAC3B,OAAO,SAAS,EAAE,iDAAiD,EAAE;;AACrE,OAAO,uBAAuB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');\n\nhtml, body { height: 100%; }\nbody { margin: 0; font-family: Roboto, \"Helvetica Neue\", sans-serif; }\nhtml { background-color: white} "],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 

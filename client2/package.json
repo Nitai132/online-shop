@@ -24,6 +24,7 @@
     "@ngmodule/material-carousel": "^0.6.0",
     "alertify": "^0.3.0",
     "alertifyjs": "^1.13.1",
+    "bootstrap": "^4.6.0",
     "ng-image-slider": "^2.6.4",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
