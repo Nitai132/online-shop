@@ -1,7 +1,7 @@
 .categories-container {
     position: absolute;
     left: 44.5%;;
-    bottom: 40%;
+    bottom: 38%;
 }
 
 .categories-container-admin {
@@ -45,7 +45,7 @@
 .products-container {
     position: absolute;
     width: 59%;
-    top: 430px;
+    top: 330px;
     left: 620px;
 }
 
@@ -145,7 +145,7 @@
 .searchInput {
     position: relative;
     right: 160px;
-    bottom: 25px;
+    top: 55px;
 }
 
 @media screen and (max-width: 768px) {
