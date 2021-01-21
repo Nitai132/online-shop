@@ -95,6 +95,15 @@
     width: 40px;
 }
 
+.IG-Btn-logged {
+    background-color: rgb(153,255,204);
+    border: none;
+    position: absolute;
+    left: 80%;
+    transform: translate(-50%);  
+    width: 40px;
+}
+
 @media screen and (max-width: 768px) {
     .IG-Btn {
         background-color: rgb(153,255,204);
@@ -132,6 +141,15 @@
 }
 
 .WA-Btn {
+    background-color:rgb(153,255,204);
+    border: none;
+    position: absolute;
+    left: 85%;
+    transform: translate(-50%);  
+    width: 40px;
+}
+
+.WA-Btn-logged {
     background-color:rgb(153,255,204);
     border: none;
     position: absolute;
