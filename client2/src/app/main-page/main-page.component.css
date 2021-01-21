@@ -42,18 +42,20 @@
 }
 
 .fb-btn {
+    position: absolute;
     background-color: rgb(153,255,204);
     border: none;
-    color: blue;
-    margin-left: 884px;
+    left: 70%;
+    transform: translate(-50%);  
     width: 40px;
 }
 
 .fb-btn-logged {
     background-color:rgb(153,255,204);
     border: none;
-    color: blue;
-    margin-left: 1085px;
+    position: absolute;
+    left: 70%;
+    transform: translate(-50%);  
     width: 40px;
     
 }
@@ -87,8 +89,9 @@
 .IG-Btn {
     background-color: rgb(153,255,204);
     border: none;
-    position: relative;
-    left: 40px;
+    position: absolute;
+    left: 75%;
+    transform: translate(-50%);  
     width: 40px;
 }
 
@@ -118,8 +121,9 @@
 .WA-Btn {
     background-color:rgb(153,255,204);
     border: none;
-    position: relative;
-    left: 80px;
+    position: absolute;
+    left: 80%;
+    transform: translate(-50%);  
     width: 40px;
 }
 
@@ -201,8 +205,8 @@
 }
 
 #logo {
-    height: 100px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     position: absolute;
     top: 50%;
     left: 50%; 
