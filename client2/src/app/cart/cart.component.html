@@ -22,11 +22,15 @@
             <br />
             <img class="cartImg" src="/img/{{product.img}}">
             <button mat-mini-fab class="decreaseBtn" (click)="decreaseAmount(cartProducts[i].productId)" color="secondary">
-              <mat-icon>remove</mat-icon>
+              <mat-icon>
+                  remove
+              </mat-icon>
             </button>
             <span class="amount" *ngIf="cartProducts[i]"> {{cartProducts[i].amount}} </span>
             <button mat-mini-fab class="increaseBtn" (click)="increaseAmount(cartProducts[i].productId)" color="secondary">
-              <mat-icon>add</mat-icon>
+              <mat-icon>
+                add
+              </mat-icon>
             </button>
             <button mat-mini-fab class="deleteBtn" (click)="deleteItem(cartProducts[i].productId)" color="warn">
               <mat-icon>delete</mat-icon>

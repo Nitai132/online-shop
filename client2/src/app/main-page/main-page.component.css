@@ -19,7 +19,7 @@
 #slider {
     position: relative;
     top: 0;
-    width: 1519px ;
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {
