@@ -35,7 +35,7 @@
             <img src="/img/whatsapp.png" class="WA-Img">
         </button>
         <button class="WA-Btn">
-            <img src="/img/whatsapp.png" class="WA-Img" *ngIf="userDetails.firstName.length == 0">
+            <img src="/img/whatsapp.png" class="WA-Img" *ngIf="!userDetails.firstName">
         </button>
     </mat-toolbar>
 <div id="slider" style="object-fit: cover;">
