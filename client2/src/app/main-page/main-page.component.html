@@ -13,28 +13,29 @@
             </button>
         </form>
         <img src="/img/Logo2.png" id="logo" class="col-4">
-        <div *ngIf="userDetails.firstName" id="welcome-container">
-            <h5 *ngIf="userDetails.isAdmin === 0" id="welcome-user"> ברוך הבא {{userDetails.firstName}}</h5>
-            <h5 *ngIf="userDetails.isAdmin === 1" id="welcomeAdmin">ברוך הבא {{userDetails.firstName}}</h5>
-
-        </div>
         <!-- <button mat-button class="logoutBtn" (click)="logout()" color="warn">
             Logout
         </button> -->
         <button id="logout-Btn" *ngIf="userDetails.firstName" mat-raised-button class="logoutBtn" (click)="logout()" color="warn">
             התנתק
         </button>
-        <button class="fb-btn-logged" (click)="openFB()" *ngIf="userDetails.firstName">
+        <button class="fb-btn-logged" (click)="openFB()" *ngIf="userDetails.firstName.length > 0">
             <img src="/img/facebook.png" class="fb-Img">
         </button>
         <button class="fb-btn" (click)="openFB()" *ngIf="!userDetails.firstName">
             <img src="/img/facebook.png" class="fb-Img">
         </button>
         <button class="IG-Btn">
-            <img src="/img/instagram.png" class="IG-Img">
+            <img src="/img/instagram.png" class="IG-Img" *ngIf="!userDetails.firstName">
+        </button>
+        <button class="IG-Btn-logged">
+            <img src="/img/instagram.png" class="IG-Img" *ngIf="userDetails.firstName.length > 0">
+        </button>
+        <button class="WA-Btn-logged" *ngIf="userDetails.firstName.length > 0">
+            <img src="/img/whatsapp.png" class="WA-Img">
         </button>
         <button class="WA-Btn">
-                <img src="/img/whatsapp.png" class="WA-Img">
+            <img src="/img/whatsapp.png" class="WA-Img" *ngIf="userDetails.firstName.length == 0">
         </button>
     </mat-toolbar>
 <div id="slider" style="object-fit: cover;">

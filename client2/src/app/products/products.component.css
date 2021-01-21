@@ -12,9 +12,9 @@
 
 @media screen and (max-width: 768px) {
     .categories-container-admin {
-        position: absolute;
+        position: static;
         overflow:auto;
-        width: 30%;
+        width: 100%;
         height: 100px;
         top: 71%;
     }

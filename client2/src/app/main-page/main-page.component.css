@@ -78,7 +78,7 @@
         background-color: rgb(153,255,204);
         border: none;
         position: relative;
-        left: 50%;
+        left: 75%;
         bottom: 25%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
@@ -101,6 +101,19 @@
         border: none;
         position: relative;
         left: 50%;
+        bottom: 25%;
+        margin-left: 0px;
+        transform: translate(-50%, -50%);  
+        width: 40px;     
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .IG-Btn-logged {
+        background-color: rgb(153,255,204);
+        border: none;
+        position: relative;
+        left: 70%;
         bottom: 25%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
@@ -132,13 +145,28 @@
         background-color: rgb(153,255,204);
         border: none;
         position: relative;
-        left: 50%;
+        left: 37%;
         bottom: 25%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
         width: 40px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .WA-Btn-logged {
+        background-color: rgb(153,255,204);
+        border: none;
+        position: relative;
+        left: 49%;
+        bottom: 25%;
+        margin-left: 0px;
+        transform: translate(-50%, -50%);  
+        width: 40px;
+    }
+}
+
+
 
 .WA-Img {
     width: 40px;
@@ -288,6 +316,7 @@
 @media screen and (max-width: 768px) {
     #logout-Btn {
         position: absolute;
-        bottom: 200px;
+        bottom: 20px;
+        left: 270px;
     }
 }
