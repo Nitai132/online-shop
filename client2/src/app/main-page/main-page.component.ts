@@ -21,7 +21,7 @@ export class MainPageComponent implements OnInit {
   addedProducts = [];
   itemToEdit = {};
   imageObject = [{
-    image: '/img/mainImg1.jpg',
+    image: '/img/mainImg1.jpeg',
     thumbImage: '/img/mainImg1.jpg',
     alt: 'Image alt'
   },{
@@ -29,7 +29,7 @@ export class MainPageComponent implements OnInit {
     thumbImage: '/img/mainImg2.jpg',
     alt: 'alt of image',
   },{
-    image: '/img/mainImg3.jpg',
+    image: '/img/mainImg3.jpeg',
     thumbImage: '/img/mainImg3.jpg',
     alt: 'alt of image',
   },{

@@ -136,7 +136,7 @@ class MainPageComponent {
         this.addedProducts = [];
         this.itemToEdit = {};
         this.imageObject = [{
-                image: '/img/mainImg1.jpg',
+                image: '/img/mainImg1.jpeg',
                 thumbImage: '/img/mainImg1.jpg',
                 alt: 'Image alt'
             }, {
@@ -144,7 +144,7 @@ class MainPageComponent {
                 thumbImage: '/img/mainImg2.jpg',
                 alt: 'alt of image',
             }, {
-                image: '/img/mainImg3.jpg',
+                image: '/img/mainImg3.jpeg',
                 thumbImage: '/img/mainImg3.jpg',
                 alt: 'alt of image',
             }, {
