@@ -28,14 +28,14 @@
         <button class="IG-Btn">
             <img src="/img/instagram.png" class="IG-Img" *ngIf="!userDetails.firstName">
         </button>
-        <button class="IG-Btn-logged">
-            <img src="/img/instagram.png" class="IG-Img" *ngIf="userDetails.firstName.length > 0">
+        <button class="IG-Btn-logged" *ngIf="userDetails.firstName.length > 0">
+            <img src="/img/instagram.png" class="IG-Img">
         </button>
         <button class="WA-Btn-logged" *ngIf="userDetails.firstName.length > 0">
             <img src="/img/whatsapp.png" class="WA-Img">
         </button>
-        <button class="WA-Btn">
-            <img src="/img/whatsapp.png" class="WA-Img" *ngIf="!userDetails.firstName">
+        <button class="WA-Btn" *ngIf="!userDetails.firstName">
+            <img src="/img/whatsapp.png" class="WA-Img">
         </button>
     </mat-toolbar>
 <div id="slider" style="object-fit: cover;">

@@ -98,7 +98,6 @@
 .IG-Btn-logged {
     background-color: rgb(153,255,204);
     border: none;
-    position: absolute;
     left: 80%;
     transform: translate(-50%);  
     width: 40px;
@@ -163,7 +162,7 @@
         background-color: rgb(153,255,204);
         border: none;
         position: relative;
-        left: 37%;
+        left: 50%;
         bottom: 25%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  

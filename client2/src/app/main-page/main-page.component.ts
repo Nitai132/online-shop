@@ -110,7 +110,7 @@ export class MainPageComponent implements OnInit {
         this.userDetails = data;
         window.location.reload();
       }).catch(() => {
-      alertify.error('wrong username or password')
+      alertify.error('שם המשתמש או הסיסמא אינם נכונים')
     })
   };
   

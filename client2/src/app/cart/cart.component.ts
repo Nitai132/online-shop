@@ -124,7 +124,7 @@ addProduct() {
       referrerPolicy: 'no-referrer', 
       body: JSON.stringify(objToSend)
     })
-    .then(() => alert('your item has been added successfully. click on the category you have changed to view added items'))
+    .then(() => alert('הוספת את המוצר בהצלחה. לחץ על הקטגוריה בה הוספת את המוצר כדי לראות את השינויים'))
     .catch(err => console.log(err));
   })
   .catch(err => console.log(err))
@@ -158,7 +158,7 @@ editProduct() {
     })
     .then(() => {
       console.log(objToSend, this.editUploadImg)
-      alert('your item has been edited successfully. refresh the category to see the changes')})
+      alert('ערכת את המוצר הבהצלחה. לחץ שוב על הקטגוריה בה המוצר שערכת מופיע כדי לראות את השינויים')})
     .catch(err => console.log(err));
   })
   .catch(err => console.log(err))

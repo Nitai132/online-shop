@@ -61,7 +61,6 @@
 .column {
     float: left;
     width: 25%;
-    padding: 20px;
     text-align: center;
     box-sizing: border-box;
     border: 1px white;
@@ -69,9 +68,10 @@
 
 @media screen and (max-width: 768px) {
     .column{
-        width: 50%;
+        width: 45%;
         display: inline;
         float: left;
+        padding-left: 10%;
     }
 }
 
@@ -102,6 +102,7 @@
 @media screen and (max-width: 768px) {
     .product-title {
         left: 0px;
+        top: 250px;
     }
 }
 

@@ -23,7 +23,7 @@ const createNewCart = async (id) => {
 const addCartProduct = async (cartId, productId) => {
     try {
         const CheckExistance = await CartProduct.find({cartId: cartId, productId: productId});
-        const itemExists = 'you already have this item in your cart. you can change the amount in your cart';
+        const itemExists = 'פריט זה כבר נמצא בעגלהת הקניות שלך. ניתן לשנות את הכמות בעגלה הקניות';
         if (CheckExistance.length > 0) {
           return {itemExists: itemExists};
         } else {
@@ -41,7 +41,7 @@ const decreaseCartProduct = async (cartId, productId) => {
     try {
         const checkAmount = await CartProduct.find({cartId: cartId, productId: productId});
         if (checkAmount[0].amount == 1) {
-            return {err: 'use the delete button to remove a product from your cart'};
+            return {err: 'השתמש בכפתור המחיקה האדום כדי למחוק את המוצר מהעגלה'};
         } else {
             return await CartProduct.updateOne({cartId: cartId, productId: productId }, { $inc: { amount: -1 } });
         }
