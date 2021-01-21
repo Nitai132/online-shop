@@ -22,7 +22,7 @@ export class MainPageComponent implements OnInit {
   itemToEdit = {};
   imageObject = [{
     image: '/img/mainImg1.jpeg',
-    thumbImage: '/img/mainImg1.jpg',
+    thumbImage: '/img/mainImg1.jpeg',
     alt: 'Image alt'
   },{
     image: '/img/mainImg2.jpg',
@@ -30,7 +30,7 @@ export class MainPageComponent implements OnInit {
     alt: 'alt of image',
   },{
     image: '/img/mainImg3.jpeg',
-    thumbImage: '/img/mainImg3.jpg',
+    thumbImage: '/img/mainImg3.jpeg',
     alt: 'alt of image',
   },{
     image: '/img/shake.jpg',
