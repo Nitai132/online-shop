@@ -57,7 +57,7 @@ export class ProductsComponent implements OnInit {
     .then(res => res.json())
     .then(data => {
       this.categories = data;
-      this.selectedCategory = this.categories[0]._id;
+      this.selectedCategory = this.categories[6]._id;
     }).then(() => {
       fetch(`/api/products/getByCategory/${this.selectedCategory}`)
       .then(res => res.json())
