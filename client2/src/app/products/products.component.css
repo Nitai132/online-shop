@@ -61,6 +61,7 @@
 .column {
     float: left;
     width: 25%;
+    padding: 20px;
     text-align: center;
     box-sizing: border-box;
     border: 1px white;
@@ -71,6 +72,7 @@
         width: 45%;
         display: inline;
         float: left;
+        padding: 0px;
         padding-left: 10%;
     }
 }
