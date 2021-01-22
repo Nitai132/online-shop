@@ -1,78 +1,78 @@
 <div class="title">
-    <h1>Registeration</h1>
+    <h1>יצירת משתמש חדש</h1>
     <h5>
-        welcome new user! please fill the Registeration form below in order to sign up.
+        ברוך הבא! אנא מלא את הטופס לפי ההוראות על מנת ליצור משתמש חדש
         <br />
-        make sure all the details are correct in order to get your delivery to the right address
+        יש לוודא שכל הפרטים נכונים על מנת לקבל את המשלוח לכתובת הנכונה
     </h5>
-    <h4 id="note">note! the "next" button will only appear once all fields are filled and both passwords match</h4>
+    <h4 id="note">הערה: כפתור "הבא" יופיע רק לאחר שכל הפרטים מולאו בצורה נכונה</h4>
 </div>
 <mat-horizontal-stepper #stepper [linear]="isLinear" #stepper id="register-form" linear>
     <mat-step [stepControl]="firstFormGroup">
       <br />
       <br />
       <form [formGroup]="firstFormGroup">
-        <ng-template matStepLabel>email and password</ng-template>
+        <ng-template matStepLabel>אימייל וסיסמא</ng-template>
         <mat-form-field id="field1">
-            <mat-label>email</mat-label>
+            <mat-label>אימייל</mat-label>
             <input matInput [(ngModel)]="email" formControlName="firstCtrl" required>
         </mat-form-field>
         <mat-form-field id="field2">
-            <mat-label>password</mat-label>
+            <mat-label>סיסמא</mat-label>
             <input type="password" matInput [(ngModel)]="password" formControlName="firstCtrl" required>
         </mat-form-field>
         <mat-form-field id="field3">
-            <mat-label>confirm password</mat-label>
+            <mat-label>אישור סיסמא</mat-label>
             <input type="password" matInput [(ngModel)]="confirmPassword" formControlName="firstCtrl" required>
         </mat-form-field>
         <div *ngIf="email && password && confirmPassword && password === confirmPassword">
-          <button mat-button matStepperNext id="next1">Next</button>
+          <button mat-button matStepperNext id="next1">הבא</button>
         </div>
       </form>
     </mat-step>
     <mat-step [stepControl]="secondFormGroup">
       <form [formGroup]="secondFormGroup">
-        <ng-template matStepLabel>Personal info & address</ng-template>
+        <ng-template matStepLabel>מידע אישי וכתובת</ng-template>
         <mat-form-field>
-            <mat-label>City</mat-label>
+            <mat-label>עיר</mat-label>
             <input matInput [(ngModel)]="city" formControlName="secondCtrl" required>
           </mat-form-field>
         <mat-form-field id="field4">
-            <mat-label>Street</mat-label>
+            <mat-label>רחוב ומספר דירה</mat-label>
             <input matInput [(ngModel)]="street" formControlName="secondCtrl" required>
         </mat-form-field>
         <mat-form-field id="field5">
-            <mat-label>First name</mat-label>
+            <mat-label>שם פרטי</mat-label>
             <input matInput [(ngModel)]="firstName" formControlName="secondCtrl" required>
         </mat-form-field>
         <mat-form-field id="field6">
-            <mat-label>Last name</mat-label>
+            <mat-label>שם משפחה</mat-label>
             <input matInput [(ngModel)]="lastName" formControlName="secondCtrl" required>
         </mat-form-field>
         <div>
-          <button mat-button matStepperPrevious>Back</button>
-          <button mat-button matStepperNext *ngIf="city && street && firstName && lastName">Next</button>
+          <button mat-button matStepperPrevious>חזור</button>
+          <button mat-button matStepperNext *ngIf="city && street && firstName && lastName">הבא</button>
         </div>
       </form>
     </mat-step>
     <mat-step>
-      <ng-template matStepLabel>Done</ng-template>
-      <p>You are now done.</p>
+      <ng-template matStepLabel>סיום</ng-template>
+      <p>פרטייך הוזנו בהצלחה. יש לוודא כי הפרטים נכונים וללחוץ על אישור</p>
       <h4 id="details">
-        email: {{email}}
+        אימייל: {{email}}
         <br />
-        city: {{city}}
+        עיר: {{city}}
         <br />
-         street: {{street}}
+        רחוב ומספר דירה: {{street}}
          <br />
-          first name: {{firstName}}
+          שם פרטי: {{firstName}}
           <br />
-          last name: {{lastName}}
+          שם משפחה: {{lastName}}
       </h4>
-      <p> if all the details are correct you can press the register button & login to start shopping!</p>
+      <p>אם כל הפרטים נכונים יש ללחוץ על אישור. לאחר מכן תוכל להתחבר ולהתחיל לרכוש מוצרים</p>
       <div>
-        <button mat-button matStepperPrevious>Back</button>
-        <button mat-button (click)="register()">register</button>
+        <button mat-button matStepperPrevious>חזרה</button>
+        <button mat-button (click)="register()">אישור</button>
       </div>
     </mat-step>
   </mat-horizontal-stepper>
