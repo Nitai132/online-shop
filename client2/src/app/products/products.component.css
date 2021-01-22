@@ -1,13 +1,13 @@
 .categories-container {
     position: absolute;
-    left: 670px;
-    bottom: 290px;
+    left: 660px;
+    bottom: 287px;
 }
 
 .categories-container-admin {
     position: absolute;
-    left: 670px;
-    bottom: 290px;
+    left: 660px;
+    bottom: 287px;
 }
 
 @media screen and (max-width: 768px) {
