@@ -76,7 +76,7 @@ export class MainPageComponent implements OnInit {
   };
 
   openIG() {
-    window.open("//" + 'https://www.instagram.com/super_fruit_israel/', '_blank');
+    window.open("//" + 'www.instagram.com/super_fruit_israel/', '_blank');
   }
 
   openFB() {
