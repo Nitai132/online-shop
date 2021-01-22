@@ -1,13 +1,13 @@
 .categories-container {
     position: absolute;
-    left: 660px;
-    bottom: 287px;
+    left: 650px;
+    bottom: 300px;
 }
 
 .categories-container-admin {
     position: absolute;
-    left: 660px;
-    bottom: 287px;
+    left: 650px;
+    bottom: 300px;
 }
 
 @media screen and (max-width: 768px) {
@@ -147,7 +147,7 @@
 
 .searchInput {
     position: relative;
-    right: 170px;
+    right: 180px;
     bottom: 40px;
 }
 
