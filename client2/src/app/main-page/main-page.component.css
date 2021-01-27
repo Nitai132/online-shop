@@ -1,7 +1,7 @@
 .toolBar {
     position: relative;
     top: 0;
-    background-color:rgb(153,255,204);
+    background-color:rgb(175,206,157);
     height: 100px;
     width: 100%;
 }
@@ -10,7 +10,7 @@
     .toolBar {
         position: relative;
         top: 0;
-        background-color: rgb(153,255,204);
+        background-color: rgb(175,206,157);
         height: 170px;
         width: 100%;
     }
@@ -43,7 +43,7 @@
 
 .fb-btn {
     position: absolute;
-    background-color: rgb(153,255,204);
+    background-color: rgb(175,206,157);
     border: none;
     left: 75%;
     transform: translate(-50%);  
@@ -51,7 +51,7 @@
 }
 
 .fb-btn-logged {
-    background-color:rgb(153,255,204);
+    background-color:rgb(175,206,157);
     border: none;
     position: absolute;
     left: 75%;
@@ -62,7 +62,7 @@
 
 @media screen and (max-width: 768px) {
     .fb-btn {
-        background-color: rgb(153,255,204);
+        background-color: rgb(175,206,157);
         border: none;
         position: relative;
         left: 50%;
@@ -75,7 +75,7 @@
 
 @media screen and (max-width: 768px) {
     .fb-btn-logged {
-        background-color: rgb(153,255,204);
+        background-color: rgb(175,206,157);
         border: none;
         position: relative;
         left: 75%;
@@ -87,7 +87,7 @@
 }
 
 .IG-Btn {
-    background-color: rgb(153,255,204);
+    background-color: rgb(175,206,157);
     border: none;
     position: absolute;
     left: 80%;
@@ -96,7 +96,7 @@
 }
 
 .IG-Btn-logged {
-    background-color: rgb(153,255,204);
+    background-color: rgb(175,206,157);
     position: absolute;
     border: none;
     left: 80%;
@@ -106,7 +106,7 @@
 
 @media screen and (max-width: 768px) {
     .IG-Btn {
-        background-color: rgb(153,255,204);
+        background-color: rgb(175,206,157);
         border: none;
         position: relative;
         left: 50%;
@@ -119,7 +119,7 @@
 
 @media screen and (max-width: 768px) {
     .IG-Btn-logged {
-        background-color: rgb(153,255,204);
+        background-color: rgb(175,206,157);
         border: none;
         position: relative;
         left: 70%;
@@ -141,7 +141,7 @@
 }
 
 .WA-Btn {
-    background-color:rgb(153,255,204);
+    background-color:rgb(175,206,157);
     border: none;
     position: absolute;
     left: 85%;
@@ -150,7 +150,7 @@
 }
 
 .WA-Btn-logged {
-    background-color:rgb(153,255,204);
+    background-color:rgb(175,206,157);
     border: none;
     position: absolute;
     left: 85%;
@@ -160,7 +160,7 @@
 
 @media screen and (max-width: 768px) {
     .WA-Btn {
-        background-color: rgb(153,255,204);
+        background-color: rgb(175,206,157);
         border: none;
         position: relative;
         left: 50%;
@@ -173,7 +173,7 @@
 
 @media screen and (max-width: 768px) {
     .WA-Btn-logged {
-        background-color: rgb(153,255,204);
+        background-color: rgb(175,206,157);
         border: none;
         position: relative;
         left: 49%;

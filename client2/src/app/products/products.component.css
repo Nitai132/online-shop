@@ -38,7 +38,7 @@
 
 .categories {
     color: black;
-    background-color:rgb(153,255,204);
+    background-color:rgb(175,206,157);
     font-family: 'Assistant', sans-serif;
 }
 
@@ -128,7 +128,7 @@
     width: 80%;
     top: 30px;
     color: black;
-    background-color: rgb(153,255,204);
+    background-color: rgb(175,206,157);
 }
 
 @media screen and (max-width: 768px) {
