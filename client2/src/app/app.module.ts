@@ -15,7 +15,9 @@ import {MatNativeDateModule} from '@angular/material/core'
 import {MatSelectModule} from '@angular/material/select';
 import { NgImageSliderModule } from 'ng-image-slider';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatMenuModule} from '@angular/material/menu';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -54,7 +56,9 @@ import { OrderComponent } from './order/order.component';
     MatGridListModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatMenuModule,
     MatSelectModule,
+    FlexLayoutModule,
     ReactiveFormsModule,
     CommonModule,
     FormsModule,

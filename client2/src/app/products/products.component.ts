@@ -20,6 +20,7 @@ export class ProductsComponent implements OnInit {
   @Output() productAdded = new EventEmitter<string>();
   @Output() productEdit = new EventEmitter<object>();
   @Input() isAdmin: Number;
+  @Input() deviceXs: boolean;
 
 
   filterProducts({target: {value}}) {

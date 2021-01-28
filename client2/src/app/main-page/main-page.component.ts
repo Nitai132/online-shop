@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router"
+import { MediaChange, MediaObserver } from '@angular/flex-layout';
+import { Subscription } from 'rxjs';
 declare let alertify: any;
 
 @Component({
@@ -8,8 +10,9 @@ declare let alertify: any;
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent implements OnInit {
-
-  constructor(private router: Router) { }
+  constructor(private router: Router, public mediaObserver: MediaObserver) { }
+  mediaSub: Subscription;
+  deviceXs: boolean;
   Email = '';
   Password = '';
   userDetails = {
@@ -120,6 +123,9 @@ export class MainPageComponent implements OnInit {
   
   
   ngOnInit(): void {
+    this.mediaSub = this.mediaObserver.media$.subscribe((result:MediaChange)=>{
+      this.deviceXs = result.mqAlias === 'xs' ? true : false;  
+    });
     fetch('/api/auth/userDetails')
     .then(response => response.json())
     .then((data) => {
@@ -136,7 +142,10 @@ export class MainPageComponent implements OnInit {
         this.cart = cart._id;
       })
     })
+  }
 
+  ngOnDestroy() {
+    this.mediaSub.unsubscribe();
   }
 
 }
