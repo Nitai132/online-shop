@@ -9,7 +9,7 @@
     </mat-button-toggle-group>
 </div>
 <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" id="menu-btn" *ngIf="deviceXs === true">
-    <mat-icon>more_vert</mat-icon>
+    <mat-icon>menu</mat-icon>
   </button>
   <mat-menu #menu="matMenu" id="menu-div">
     <button mat-button id="menu-display" *ngFor="let category of categories; let i = index">
