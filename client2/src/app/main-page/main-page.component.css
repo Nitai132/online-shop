@@ -2,7 +2,7 @@
     position: relative;
     top: 0;
     background-color:rgb(175,206,157);
-    height: 100px;
+    height: 120px;
     width: 100%;
 }
 
@@ -19,6 +19,7 @@
 #slider {
     position: relative;
     top: 0;
+    top: 50px;
     width: 100%;
 }
 
@@ -252,7 +253,7 @@
 
 #logo {
     height: 105px;
-    width: 250px;
+    width: 300px;
     position: absolute;
     top: 50%;
     left: 50%; 

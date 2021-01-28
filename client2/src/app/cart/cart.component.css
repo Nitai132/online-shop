@@ -2,10 +2,13 @@
     width: 30%;
     position: absolute;
     display: inline;
+    
 }
 
 .container {
+    position: relative;
     width: 400px;
+    top: 50px;
 }
 
 @media screen and (max-width: 768px) {
