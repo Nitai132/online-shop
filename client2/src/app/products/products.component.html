@@ -11,9 +11,9 @@
 <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" id="menu-btn" *ngIf="deviceXs === true">
     <mat-icon>more_vert</mat-icon>
   </button>
-  <mat-menu #menu="matMenu" id="menu-display">
-    <button mat-button id="menu-display" *ngFor="let category of categories; let i = index" (click)="selectedChanged(group.value)" value="{{category._id}}">
-        <p>{{category.name}}</p>
+  <mat-menu #menu="matMenu" id="menu-div">
+    <button mat-button id="menu-display" *ngFor="let category of categories; let i = index">
+        <span (click)="selectedChangedMobilie($event)" value="{{category._id}}">{{category.name}}</span>
     </button>
   </mat-menu>
 <div class="products-container">

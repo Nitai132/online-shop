@@ -30,13 +30,22 @@ export class ProductsComponent implements OnInit {
 
   selectedChanged(val) {
     this.selectedCategory = val;
-    console.log(val);
     fetch(`/api/products/getByCategory/${this.selectedCategory}`)
     .then(res => res.json())
     .then(data => {
       this.products = data;
       this.filteredArray = data;
-      console.log(data)
+    });
+  };
+
+  selectedChangedMobilie({target}) {
+    this.selectedCategory = target.value;
+    console.log(target.value)
+    fetch(`/api/products/getByCategory/${this.selectedCategory}`)
+    .then(res => res.json())
+    .then(data => {
+      this.products = data;
+      this.filteredArray = data;
     });
   };
 

@@ -188,11 +188,14 @@ button.mat-button {
     position: absolute;
     top: 0;
     right: 0;
-    top: 10px;
+    top: 5px;
     right: 10px;
 }
 
 #menu-display {
     width: 100%;
-    opacity: 50%;
+}
+
+#menu-div {
+    opacity: 20%;
 }
