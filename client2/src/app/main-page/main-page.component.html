@@ -38,6 +38,7 @@
             <img src="/img/whatsapp.png" class="WA-Img">
         </button>
     </mat-toolbar>
+    <app-products (productAdded)="addProductToCart($event)" (productEdit)="editProduct($event)" [isAdmin]="userDetails.isAdmin"></app-products>
 <div id="slider" style="object-fit: cover;">
     <ng-image-slider
     style="object-fit: cover;"
@@ -51,4 +52,3 @@
 </div>
 
 <app-cart [Product]="addedProducts" [Cart]="cart" [isAdmin]="userDetails.isAdmin" [editDetails]="itemToEdit"></app-cart>
-<app-products (productAdded)="addProductToCart($event)" (productEdit)="editProduct($event)" [isAdmin]="userDetails.isAdmin"></app-products>

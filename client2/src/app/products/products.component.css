@@ -1,6 +1,6 @@
 .categories-container {
-    position: absolute;
-    bottom: 585px;
+    position: relative;
+    top:0;
     background-color: lightgreen;
     width: 100%;
 }
