@@ -194,8 +194,10 @@ button.mat-button {
 
 #menu-display {
     width: 100%;
+    color: white;
 }
 
-#menu-div {
-    opacity: 20%;
-}
+::ng-deep .menu-div{
+    opacity: 60%;
+    background-color:black;
+  }
