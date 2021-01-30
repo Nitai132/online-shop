@@ -1,3 +1,6 @@
+<div *ngIf="deviceXs === true" id="phone-number-mobile">
+    <a href="tel:052-2222-222" id="phone-number-text-mobile">חייג והזמן עכשיו 052-2222-222</a>
+    </div>
     <mat-toolbar class="toolBar row" >
         <form class="login-form col-4 col-sm-12" *ngIf="!userDetails.firstName">
             <mat-form-field id="emailInput">
@@ -37,6 +40,9 @@
         <button class="WA-Btn" *ngIf="!userDetails.firstName">
             <img src="/img/whatsapp.png" class="WA-Img">
         </button>
+        <span *ngIf="deviceXs === false" id="phone-number">
+            טלפון להזמנות: 05222222222
+        </span>
     </mat-toolbar>
     <app-products *ngIf="deviceXs === false"(productAdded)="addProductToCart($event)" (productEdit)="editProduct($event)" [deviceXs]="deviceXs" [isAdmin]="userDetails.isAdmin"></app-products>
 <div id="slider" style="object-fit: cover;">
@@ -50,6 +56,5 @@
     slideImage="1">
     </ng-image-slider>
 </div>
-
 <app-cart [Product]="addedProducts" [Cart]="cart" [isAdmin]="userDetails.isAdmin" [editDetails]="itemToEdit"></app-cart>
 <app-products *ngIf="deviceXs === true"(productAdded)="addProductToCart($event)" (productEdit)="editProduct($event)" [deviceXs]="deviceXs" [isAdmin]="userDetails.isAdmin"></app-products>

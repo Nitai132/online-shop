@@ -337,3 +337,27 @@
         left: 270px;
     }
 }
+
+#phone-number {
+    position: relative;
+    top: 50px;
+    left: 60%;
+    transform: translate(-50%);  
+}
+
+#phone-number-mobile {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0; /* required */
+    text-align: center;
+    height: 50px;
+    background-color: rgb(175,206,157);
+    color: black;
+}
+
+#phone-number-text-mobile {
+    color: black;
+    position: relative;
+    top: 25%;
+    font-size: 20px;
+}
