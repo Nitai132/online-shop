@@ -208,3 +208,7 @@ button.mat-button {
     text-align: center;
     bottom: 40px;
 }
+
+#icon-img {
+    padding-left: 10px;
+}

@@ -14,6 +14,8 @@
   <mat-menu #menu="matMenu" class="menu-div">
     <button mat-button id="menu-display" *ngFor="let category of categories; let i = index">
         <span (click)="selectedChangedMobilie($event)" value="{{category._id}}">{{category.name}}</span>
+        <img src="http://localhost:4422/img/icon{{i}}.png" width="20px" id="icon-img">
+
     </button>
   </mat-menu>
 <div class="products-container">
