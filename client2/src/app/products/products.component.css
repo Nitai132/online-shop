@@ -1,7 +1,7 @@
 .categories-container {
     position: relative;
     top:0;
-    background-color: lightgreen;
+    background-color:rgb(175,206,157);
     width: 100%;
 }
 
@@ -39,7 +39,7 @@
 
 .categories {
     color: black;
-    background-color: lightgreen;
+    background-color: rgb(175,206,157);
     font-family: 'Assistant', sans-serif;
 }
 
@@ -155,7 +155,7 @@
 .searchInput {
     position: relative;
     left: 350px;
-    top: 30px;
+    top: 70px;
 }
 
 @media screen and (max-width: 768px) {
@@ -198,6 +198,6 @@ button.mat-button {
 }
 
 ::ng-deep .menu-div{
-    opacity: 60%;
-    background-color:black;
+    opacity: 90%;
+    background-color:rgb(175,206,157);
   }
