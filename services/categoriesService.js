@@ -15,4 +15,15 @@ const getCategories = async () => {
     };
 };
 
-module.exports = { getCategories };
+const getName = async (id) => {
+   try {
+       console.log(id);
+       const category = await Category.findOne({_id: id})
+       return category.name
+   } catch(err) {
+       console.log(err);
+       throw err;
+   }
+}
+
+module.exports = { getCategories, getName };

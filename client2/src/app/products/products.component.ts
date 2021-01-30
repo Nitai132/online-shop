@@ -16,6 +16,7 @@ export class ProductsComponent implements OnInit {
   selectedCategory = '';
   products = [];
   filteredArray = [];
+  categoryName = 'פירות קפואים'
   constructor() { }
   @Output() productAdded = new EventEmitter<string>();
   @Output() productEdit = new EventEmitter<object>();
@@ -30,23 +31,33 @@ export class ProductsComponent implements OnInit {
 
   selectedChanged(val) {
     this.selectedCategory = val;
-    fetch(`/api/products/getByCategory/${this.selectedCategory}`)
-    .then(res => res.json())
-    .then(data => {
-      this.products = data;
-      this.filteredArray = data;
-    });
+    fetch(`/api/categories/getName/${this.selectedCategory}`)
+    .then( res => res.json())
+    .then(name => {
+      this.categoryName = name;
+      fetch(`/api/products/getByCategory/${this.selectedCategory}`)
+        .then(res => res.json())
+        .then(data => {
+        this.products = data;
+        this.filteredArray = data;
+      });
+    })
   };
 
   selectedChangedMobilie({target}) {
     this.selectedCategory = target.value;
-    console.log(target.value)
-    fetch(`/api/products/getByCategory/${this.selectedCategory}`)
-    .then(res => res.json())
-    .then(data => {
-      this.products = data;
-      this.filteredArray = data;
-    });
+    fetch(`/api/categories/getName/${this.selectedCategory}`)
+    .then( res => res.json())
+    .then(name => {
+      this.categoryName = name;
+      fetch(`/api/products/getByCategory/${this.selectedCategory}`)
+      .then(res => res.json())
+      .then(data => {
+        this.products = data;
+        this.filteredArray = data;
+      });
+    })
+
   };
 
   addProductToCart(productId) {

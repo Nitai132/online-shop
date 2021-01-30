@@ -26,6 +26,9 @@
           <input  (keyup)="filterProducts($event)" matInput placeholder="לדוגמא: אבטיח">
         </mat-form-field>
     </form>
+    <div id="category-title">
+        {{categoryName}}
+    </div>
     <div *ngIf = "filteredArray.length == products.length">
         <div class ="card" *ngFor = "let product of products">
             <div class="column">
