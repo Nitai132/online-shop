@@ -51,7 +51,7 @@
 .products-container {
     position: absolute;
     width: 59%;
-    top: 560px;
+    top: 550px;
     left: 380px;
 }
 
@@ -188,7 +188,7 @@ button.mat-button {
     position: absolute;
     top: 0;
     right: 0;
-    top: 10px;
+    top: 6px;
     right: 10px;
 }
 

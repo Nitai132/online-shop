@@ -1,9 +1,9 @@
-<div class="categories-container" *ngIf="isAdmin === 0 || !isAdmin && isAdmin !== 0 && deviceXs === false">
+<div class="categories-container" *ngIf="isAdmin === 0 && deviceXs === false || !isAdmin && isAdmin !== 0 && deviceXs === false">
     <mat-button-toggle-group #group="matButtonToggleGroup" class="categories2" name="fontStyle" aria-label="Font Style" value={{selectedCategory}}>
         <mat-button-toggle class="categories" *ngFor="let category of categories; let i = index" (click)="selectedChanged(group.value)" value="{{category._id}}">{{category.name}}</mat-button-toggle>
     </mat-button-toggle-group>
 </div>
-<div class="categories-container-admin" *ngIf="isAdmin === 1">
+<div class="categories-container-admin" *ngIf="isAdmin === 1 && deviceXs === false">
     <mat-button-toggle-group #group="matButtonToggleGroup" name="fontStyle" aria-label="Font Style" value={{selectedCategory}}>
         <mat-button-toggle class="categories" *ngFor="let category of categories; let i = index" (click)="selectedChanged(group.value)" value="{{category._id}}">{{category.name}}</mat-button-toggle>
     </mat-button-toggle-group>
@@ -15,7 +15,6 @@
     <button mat-button id="menu-display" *ngFor="let category of categories; let i = index">
         <span (click)="selectedChangedMobilie($event)" value="{{category._id}}">{{category.name}}</span>
         <img src="/img/icon{{i}}.png" width="20px" id="icon-img">
-
     </button>
   </mat-menu>
 <div class="products-container">

@@ -65,7 +65,7 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 45%;
+        left: 43%;
         bottom: 25%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
@@ -78,7 +78,7 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 70%;
+        left: 66%;
         bottom: 25%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
@@ -109,7 +109,7 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 45%;
+        left: 43%;
         bottom: 25%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
@@ -163,7 +163,7 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 45%;
+        left: 43%;
         bottom: 25%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
@@ -334,23 +334,19 @@
     #logout-Btn {
         position: absolute;
         bottom: 20px;
-        left: 270px;
+        left: 265px;
     }
 }
 
 #phone-number {
-    position: relative;
-    top: 70px;
-    left: 60%;
+    position: absolute;
+    top: 170px;
+    left: 80%;
     font-size: 30px;
-    color: rgb(175,206,157);
     transform: translate(-50%);  
 }
 
 #phone-number-mobile {
-    position: sticky;
-    position: -webkit-sticky;
-    bottom: 0; /* required */
     text-align: center;
     height: 50px;
     background-color: rgb(175,206,157);
@@ -358,8 +354,17 @@
 }
 
 #phone-number-text-mobile {
-    color: black;
     position: relative;
-    top: 25%;
+    color: black;
     font-size: 20px;
+    text-align: center;
+    top: 25%;
+    left: 20px;
 }
+
+#phone-img {
+    position: absolute;
+    top: 0;
+    right: 80px;
+}
+
