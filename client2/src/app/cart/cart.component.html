@@ -61,7 +61,7 @@
              פתח\סגור את עגלת הקניות
           </mat-panel-description>
         </mat-expansion-panel-header>
-        <h5 id="ifEmpty" *ngIf="!items">העלה שלך ריקה</h5>
+        <h5 id="ifEmpty" *ngIf="items.length === 0">העלה שלך ריקה</h5>
         <ng-container>
           <p *ngFor="let item of items; let i = index">
               מוצר: {{item.name}}
