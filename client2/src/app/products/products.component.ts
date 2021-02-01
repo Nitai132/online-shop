@@ -16,10 +16,11 @@ export class ProductsComponent implements OnInit {
   selectedCategory = '';
   products = [];
   filteredArray = [];
-  categoryName = 'פירות קפואים'
+  categoryName = 'פירות קפואים';
   constructor() { }
   @Output() productAdded = new EventEmitter<string>();
   @Output() productEdit = new EventEmitter<object>();
+  @Output() unsignedProductAdded = new EventEmitter<string>();
   @Input() isAdmin: Number;
   @Input() deviceXs: boolean;
 
@@ -43,6 +44,16 @@ export class ProductsComponent implements OnInit {
       });
     })
   };
+
+  unsignedAdd(_id, name, price, img) {
+    let existingItems = JSON.parse(localStorage.getItem("items"));
+    if(existingItems == null) existingItems = [];
+    let obj = {_id, name, price, img, amount: 1}
+    existingItems.push(obj);
+    localStorage.setItem("items", JSON.stringify(existingItems));
+    this.unsignedProductAdded.emit(existingItems);
+  }
+
 
   selectedChangedMobilie({target}) {
     this.selectedCategory = target.value;
@@ -69,9 +80,6 @@ export class ProductsComponent implements OnInit {
     this.productEdit.emit(editObj)
   };
 
-  unsignedAlert() {
-    alertify.error('עלייך להתחבר כדי לרכוש מוצרים')
-  }
 
   ngOnInit(): void {
     fetch('/api/categories/all')
@@ -87,7 +95,5 @@ export class ProductsComponent implements OnInit {
         this.filteredArray = data;
       }) 
     })   
-
   }
-
 }

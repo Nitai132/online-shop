@@ -17,11 +17,15 @@ export class CartComponent implements OnInit, OnChanges {
   categories = [];
   selectCategory = '';
   editUploadImg = null;
+  unsignedTotalPrice = 0;
+  items = JSON.parse(localStorage.getItem("items"));
   constructor() { }
   @ViewChild(MatAccordion) accordion: MatAccordion;
   @Input() Product: String;
   @Input() Cart: String;
   @Input() isAdmin: Number;
+  @Input() updateItems: Array<object>;
+
   @Input() editDetails: {
     id: '',
     name: '',
@@ -200,7 +204,47 @@ editProduct() {
       this.getAllProducts()        
     })
   }
+
+  unsignedAlert() {
+    alertify.error('עלייך להתחבר כדי לבצע הזמנה')
+  }
+
+  unsignedUpdateTotalPrice() {
+     let value = 0;
+     for(let i=0; i<this.items.length; i++) {
+        value+=this.items[i].amount * this.items[i].price
+     }
+     this.unsignedTotalPrice = value;
+  }
+
+  unsignedDeleteItem(i) {
+    const items = JSON.parse(localStorage.getItem("items"));
+    items.splice(i, 1);
+    localStorage.setItem("items", JSON.stringify(items));
+    this.items = items;
+    this.unsignedUpdateTotalPrice();
+  }
+
+  unsignedDecreaseAmount(index) {
+    const items = JSON.parse(localStorage.getItem("items"));
+    if (items[index].amount > 1)
+    items[index].amount--;
+    localStorage.setItem("items", JSON.stringify(items));
+    this.items = items;
+    this.unsignedUpdateTotalPrice();
+  }
+
+  unsignedIncreaseAmount(index) {
+    const items = JSON.parse(localStorage.getItem("items"));
+    items[index].amount++;
+    localStorage.setItem("items", JSON.stringify(items));
+    this.items = items;
+    this.unsignedUpdateTotalPrice();
+  }
+
   ngOnChanges() {
+    this.items = JSON.parse(localStorage.getItem("items"));
+    this.unsignedUpdateTotalPrice();
     if(this.Cart.length > 0) {
       this.getAllProducts();
     };
@@ -215,6 +259,7 @@ editProduct() {
 
 
   ngOnInit(): void {
+    this.unsignedUpdateTotalPrice();
       fetch('/api/categories/all')
       .then (res => res.json())
       .then(data => this.categories = data);

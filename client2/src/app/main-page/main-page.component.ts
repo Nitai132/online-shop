@@ -20,6 +20,7 @@ export class MainPageComponent implements OnInit {
     _id: '',
     isAdmin: null
   };
+  items = [];
   cart = '';
   addedProducts = [];
   itemToEdit = {};
@@ -69,6 +70,10 @@ export class MainPageComponent implements OnInit {
         this.addedProducts = data.productId
       }
     })
+  }
+
+  unsignedCartUpdated(items) {
+    this.items = items
   }
 
   logout() {

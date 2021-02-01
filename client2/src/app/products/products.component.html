@@ -38,7 +38,7 @@
                 <span class="product-price">מחיר: ₪{{product.price}}</span>
                 <div class="btn-align">
                     <button *ngIf="isAdmin === 0" class="addBTN" mat-raised-button color="primary" (click)="addProductToCart(product._id)">הוסף לעגלה</button>
-                    <button *ngIf="!isAdmin && isAdmin !== 0" class="addBTN" mat-raised-button color="primary" (click)="unsignedAlert()">הוסף לעגלה</button>
+                    <button *ngIf="!isAdmin && isAdmin !== 0" class="addBTN" mat-raised-button color="primary" (click)="unsignedAdd(product._id, product.name, product.price, product.img)">הוסף לעגלה</button>
                     <button *ngIf="isAdmin === 1" class="addBTN" mat-raised-button color="warn" (click)="editProduct(product._id, product.name, product.price, product.img)">ערוך מוצר</button>
                 </div>
             </div>

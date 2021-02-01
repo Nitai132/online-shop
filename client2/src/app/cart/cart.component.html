@@ -47,27 +47,57 @@
       <a href="/order"id="buyBtn">מעבר לתשלום</a>
     </mat-expansion-panel>
   </mat-accordion>
-  <mat-accordion multi *ngIf="!isAdmin && isAdmin !== 0">
-    <mat-expansion-panel class="expansion">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          <span class="material-icons">
-            shopping_cart
-          </span>        </mat-panel-title>
-        <mat-panel-description>
-           פתח\סגור את עגלת הקניות
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <h5 id="ifEmpty" *ngIf="cartProducts.length == 0">העגלה שלך ריקה. <br /> אנא התחבר בכדי לרכוש מוצרים</h5>
-      <br />
-      <br />
-      <p id="totalPrice">מחיר העגלה: <span class="totalPriceNumber">{{totalPrice}}</span> </p>
-      <!-- <button mat-button class="deleteAllBtn" (click)="deleteAllItems()" color="warn">
-          remove all products
-      </button> -->
-      <a href="/"id="buyBtn">מעבר לתשלום</a>
-    </mat-expansion-panel>
-  </mat-accordion>
+
+
+  <div class="container">
+    <mat-accordion multi *ngIf="!isAdmin && isAdmin !== 0">
+      <mat-expansion-panel class="expansion">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span class="material-icons">
+              shopping_cart
+            </span>        </mat-panel-title>
+          <mat-panel-description>
+             פתח\סגור את עגלת הקניות
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <h5 id="ifEmpty" *ngIf="!items">העלה שלך ריקה</h5>
+        <ng-container>
+          <p *ngFor="let item of items; let i = index">
+              מוצר: {{item.name}}
+              <br />
+              מחיר: {{item.price}}₪
+              <br />
+              <span *ngIf="items[i]">מחיר סופי למוצר:{{item.price * item.amount}}₪</span> 
+              <br />
+              <img class="cartImg" src="http://localhost:4422/img/{{item.img}}">
+              <button mat-mini-fab class="decreaseBtn" (click)="unsignedDecreaseAmount(i)" color="secondary">
+                <mat-icon>
+                    remove
+                </mat-icon>
+              </button>
+              <span class="amount" *ngIf="items[i]">{{item.amount}}</span>
+              <button mat-mini-fab class="increaseBtn" (click)="unsignedIncreaseAmount(i)" color="secondary">
+                <mat-icon>
+                  add
+                </mat-icon>
+              </button>
+              <button mat-mini-fab class="deleteBtn" (click)="unsignedDeleteItem(i)" color="warn">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </p>
+        </ng-container>
+        <br />
+        <br />
+        <p id="totalPrice">מחיר העגלה: <span class="totalPriceNumber">{{unsignedTotalPrice}}</span> </p>
+        <!-- <button mat-button class="deleteAllBtn" (click)="deleteAllItems()" color="warn">
+            remove all products
+        </button> -->
+        <span (click)="unsignedAlert()" id="buyBtn">מעבר לתשלום</span>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+
   <div class="adminCart" *ngIf="isAdmin === 1">
     <h3>הוסף מוצר חדש</h3>
     <br />

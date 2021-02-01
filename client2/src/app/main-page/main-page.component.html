@@ -44,7 +44,7 @@
             להזמנה טלפונית: 052-22222222
         </span>
     </mat-toolbar>
-    <app-products *ngIf="deviceXs === false"(productAdded)="addProductToCart($event)" (productEdit)="editProduct($event)" [deviceXs]="deviceXs" [isAdmin]="userDetails.isAdmin"></app-products>
+    <app-products *ngIf="deviceXs === false" (unsignedProductAdded)="unsignedCartUpdated($event)" (productAdded)="addProductToCart($event)" (productEdit)="editProduct($event)" [deviceXs]="deviceXs" [isAdmin]="userDetails.isAdmin"></app-products>
 <div id="slider" style="object-fit: cover;">
     <ng-image-slider
     style="object-fit: cover;"
@@ -56,5 +56,5 @@
     slideImage="1">
     </ng-image-slider>
 </div>
-<app-cart [Product]="addedProducts" [Cart]="cart" [isAdmin]="userDetails.isAdmin" [editDetails]="itemToEdit"></app-cart>
-<app-products *ngIf="deviceXs === true"(productAdded)="addProductToCart($event)" (productEdit)="editProduct($event)" [deviceXs]="deviceXs" [isAdmin]="userDetails.isAdmin"></app-products>
+<app-cart [Product]="addedProducts" [Cart]="cart" [updateItems]="items" [isAdmin]="userDetails.isAdmin" [editDetails]="itemToEdit"></app-cart>
+<app-products *ngIf="deviceXs === true" (unsignedProductAdded)="unsignedCartUpdated($event)" (productAdded)="addProductToCart($event)" (productEdit)="editProduct($event)" [deviceXs]="deviceXs" [isAdmin]="userDetails.isAdmin"></app-products>
