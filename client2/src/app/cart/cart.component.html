@@ -70,7 +70,7 @@
               <br />
               <span *ngIf="items[i]">מחיר סופי למוצר:{{item.price * item.amount}}₪</span> 
               <br />
-              <img class="cartImg" src="http://localhost:4422/img/{{item.img}}">
+              <img class="cartImg" src="/img/{{item.img}}">
               <button mat-mini-fab class="decreaseBtn" (click)="unsignedDecreaseAmount(i)" color="secondary">
                 <mat-icon>
                     remove
