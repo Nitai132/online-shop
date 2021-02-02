@@ -155,7 +155,7 @@
 .searchInput {
     position: relative;
     left: 350px;
-    top: 70px;
+    top: 120px;
 }
 
 @media screen and (max-width: 768px) {
@@ -206,8 +206,9 @@ button.mat-button {
     font-size: 50px;
     position: relative;
     text-align: center;
-    bottom: 40px;
+    bottom: 20px;
 }
+
 
 #icon-img {
     padding-left: 10px;

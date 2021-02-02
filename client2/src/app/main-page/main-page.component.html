@@ -45,16 +45,16 @@
         </span>
     </mat-toolbar>
     <app-products *ngIf="deviceXs === false" (unsignedProductAdded)="unsignedCartUpdated($event)" (productAdded)="addProductToCart($event)" (productEdit)="editProduct($event)" [deviceXs]="deviceXs" [isAdmin]="userDetails.isAdmin"></app-products>
-<div id="slider" style="object-fit: cover;">
-    <ng-image-slider
-    style="object-fit: cover;"
-    [images]="imageObject" #nav
-    [images]="imageObject"
-    [infinite]="true"
-    [autoSlide]="3"
-    [imageSize]="{width: '400px', height: '40%'}"
-    slideImage="1">
-    </ng-image-slider>
-</div>
+    <div id="slider" style="object-fit: cover;">
+        <ng-image-slider
+        style="object-fit: cover;"
+        [images]="imageObject" #nav
+        [images]="imageObject"
+        [infinite]="true"
+        [autoSlide]="3"
+        [imageSize]="{width: '400px', height: '350px'}"
+        slideImage="1">
+        </ng-image-slider>
+    </div>
 <app-cart [Product]="addedProducts" [Cart]="cart" [updateItems]="items" [isAdmin]="userDetails.isAdmin" [editDetails]="itemToEdit"></app-cart>
 <app-products *ngIf="deviceXs === true" (unsignedProductAdded)="unsignedCartUpdated($event)" (productAdded)="addProductToCart($event)" (productEdit)="editProduct($event)" [deviceXs]="deviceXs" [isAdmin]="userDetails.isAdmin"></app-products>
