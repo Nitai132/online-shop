@@ -220,9 +220,8 @@
     .login-form {
         width: 80px;
         font-size: 10px;
-        margin-top: 210px;
+        height: 130px;
         left: 20%;
-
     }
 }
 
@@ -230,6 +229,7 @@
     width: 80px;
     display:inline-block;
     padding: 20px;
+    left: 220px;
 }
 
 #passInput{
@@ -244,8 +244,8 @@
         width: 80px;
         position: relative;
         display:inline-block;
-        bottom: 120px;
-        left: 200px;
+        left: 195px;
+        bottom: 10px;
     }
 }
 
@@ -253,8 +253,9 @@
     #passInput{
         width: 80px;
         display:inline-block;
-        bottom: 80px;
-        left: 80px;
+        left: 75px;
+        top: 30px;
+       
     }
 }
 
@@ -285,15 +286,15 @@
 #login-btn {
     width: 30%;
     background-color: grey;
-    
+    right: 220px;
 }
 
 @media screen and (max-width: 768px) {
     #login-btn {
         position: relative;
-        bottom: 37px;
+        top: 70px;
         width: 100%;
-        right: 20px;
+        right: 25px;
     }
 }
 
