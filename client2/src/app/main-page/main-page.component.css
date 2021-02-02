@@ -68,7 +68,7 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 71%;
+        left: 74%;
         bottom: 25%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
@@ -112,7 +112,7 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 68.5%;
+        left: 73%;
         bottom: 25%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
@@ -166,7 +166,7 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 66%;
+        left: 72.5%;
         bottom: 25%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
@@ -241,19 +241,19 @@
 
 @media screen and (max-width: 768px) {
     #emailInput{
-        width: 80px;
+        width: 90px;
         position: relative;
         display:inline-block;
-        left: 195px;
+        left: 208px;
         bottom: 10px;
     }
 }
 
 @media screen and (max-width: 768px) {
     #passInput{
-        width: 80px;
+        width: 90px;
         display:inline-block;
-        left: 75px;
+        left: 78px;
         top: 30px;
        
     }
@@ -294,7 +294,7 @@
         position: relative;
         top: 70px;
         width: 100%;
-        right: 25px;
+        right: 27px;
     }
 }
 

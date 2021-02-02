@@ -69,7 +69,7 @@
     float: left;
     width: 25%;
     padding: 20px;
-    text-align: center;
+    text-align: center !important;
     box-sizing: border-box;
     border: 1px white;
   }
@@ -114,7 +114,6 @@
 }
 
 .product-price {
-    text-align: center;
     position: relative;
     bottom: 10px;
     font-family: 'Assistant', sans-serif;
@@ -131,7 +130,7 @@
 .addBTN {
     position: relative;
     width: 80%;
-    top: 30px;
+    top: 15px;
     color: black;
     background-color: #9FD0C4;
 }
