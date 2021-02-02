@@ -48,7 +48,7 @@
     background-color: white;
     position: absolute;
     border: none;
-    left: 75%;
+    left: 12%;
     transform: translate(-50%);  
     width: 40px;
 }
@@ -57,7 +57,7 @@
     background-color: white;
     border: none;
     position: absolute;
-    left: 75%;
+    left: 12%;
     transform: translate(-50%);  
     width: 40px;
     
@@ -93,7 +93,7 @@
     background-color: white;
     border: none;
     position: absolute;
-    left: 80%;
+    left: 17%;
     transform: translate(-50%);  
     width: 40px;
 }
@@ -147,7 +147,7 @@
     background-color: white;
     border: none;
     position: absolute;
-    left: 85%;
+    left: 23%;
     transform: translate(-50%);  
     width: 40px;
 }
@@ -156,7 +156,7 @@
     background-color: white;
     border: none;
     position: absolute;
-    left: 85%;
+    left: 23%;
     transform: translate(-50%);  
     width: 40px;
 }
@@ -211,6 +211,8 @@
 
 .login-form {
     margin-bottom: 20px;
+    position: absolute;
+    left: 1050px;
 }
 
 @media screen and (max-width: 768px) {
@@ -349,9 +351,8 @@
     width: 290px;
     height: 10px;  
     top: 170px;
-    left: 195px;
+    left: 1060px;
     font-size: 30px;
-    transform: translate(-50%);  
     z-index: 9999;
 
 }
