@@ -36,7 +36,7 @@
             <div class="column">
                 <h4 class= "product-title">{{product.name}}</h4>
                 <img class="img" src="/img/{{product.img}}">
-                <span class="product-price">מחיר: ₪{{product.price}}</span>
+                <span class="product-price">₪{{product.price}}</span>
                 <div class="btn-align">
                     <button *ngIf="isAdmin === 0" class="addBTN" mat-raised-button color="primary" (click)="addProductToCart(product._id)">הוסף לעגלה</button>
                     <button *ngIf="!isAdmin && isAdmin !== 0" class="addBTN" mat-raised-button color="primary" (click)="unsignedAdd(product._id, product.name, product.price, product.img)">הוסף לעגלה</button>
@@ -50,7 +50,7 @@
             <div class="column">
                 <h4 class= "product-title">{{prod.name}}</h4>
                 <img class="img" src="/img/{{prod.img}}">
-                <span class="product-price">מחיר: ₪{{prod.price}}</span>
+                <span class="product-price">₪{{prod.price}}</span>
                 <div class="btn-align">
                     <button *ngIf="isAdmin === 1" class="addBTN" mat-raised-button color="warn" (click)="editProduct(product._id, product.name, product.price, product.img)">ערוך מוצר</button>
                     <button *ngIf="!isAdmin && isAdmin !== 0" class="addBTN" mat-raised-button color="primary" (click)="unsignedAlert()">הוסף לעגלה</button>

@@ -68,7 +68,7 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 43%;
+        left: 71%;
         bottom: 25%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
@@ -81,7 +81,7 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 66%;
+        left: 70%;
         bottom: 25%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
@@ -112,7 +112,7 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 43%;
+        left: 68.5%;
         bottom: 25%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
@@ -166,7 +166,7 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 43%;
+        left: 66%;
         bottom: 25%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
@@ -212,7 +212,8 @@
 .login-form {
     margin-bottom: 20px;
     position: absolute;
-    left: 1050px;
+    left: 79%;
+    transform: translate(-50%);  
 }
 
 @media screen and (max-width: 768px) {
@@ -220,6 +221,8 @@
         width: 80px;
         font-size: 10px;
         margin-top: 210px;
+        left: 20%;
+
     }
 }
 
@@ -242,7 +245,7 @@
         position: relative;
         display:inline-block;
         bottom: 120px;
-        left: 220px;
+        left: 200px;
     }
 }
 
@@ -251,7 +254,7 @@
         width: 80px;
         display:inline-block;
         bottom: 80px;
-        left: 100px;
+        left: 80px;
     }
 }
 
@@ -290,6 +293,7 @@
         position: relative;
         bottom: 37px;
         width: 100%;
+        right: 20px;
     }
 }
 
@@ -339,7 +343,7 @@
     #logout-Btn {
         position: absolute;
         bottom: 20px;
-        left: 265px;
+        left: 250px;
     }
 }
 
@@ -351,7 +355,8 @@
     width: 290px;
     height: 10px;  
     top: 170px;
-    left: 1060px;
+    left: 80%;
+    transform: translate(-50%); 
     font-size: 30px;
     z-index: 9999;
 

@@ -100,9 +100,8 @@
 
 .product-title {
     position: relative;
-    text-align: center;
-    top: 0;
     display: inline;
+    top: 0;
     font-family: 'Assistant', sans-serif;
 }
 
@@ -125,14 +124,14 @@
 @media screen and (max-width: 768px) {
     .product-price {
         left: 0px;
-        bottom: 250px;
+        top: 10px;
     }
 }
 
 .addBTN {
     position: relative;
     width: 80%;
-    top: 10px;
+    top: 30px;
     color: black;
     background-color: #9FD0C4;
 }
