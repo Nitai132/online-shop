@@ -154,6 +154,7 @@
     position: relative;
     left: 100px;
     top: 60px;
+    z-index: 200;
 }
 
 @media screen and (max-width: 768px) {
@@ -161,7 +162,7 @@
         position: relative;
         width: 200%;
         top: 0;
-        bottom: 50px;
+        top: 10px;
         left: 90px;
     }
 }
