@@ -265,7 +265,7 @@
 
 @media screen and (max-width: 768px) {
     #logo {
-        height: 130px;
+        height: 135px;
         width: 190px;
         position: absolute;
         float: left;
@@ -349,7 +349,7 @@
     width: 290px;
     height: 10px;  
     top: 170px;
-    left: 12.5%;
+    left: 195px;
     font-size: 30px;
     transform: translate(-50%);  
     z-index: 9999;

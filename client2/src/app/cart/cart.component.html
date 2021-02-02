@@ -10,7 +10,7 @@
            פתח\סגור את עגלת הקניות
         </mat-panel-description>
       </mat-expansion-panel-header>
-      <h5 id="ifEmpty" *ngIf="cartProducts.length == 0">העלה שלך ריקה</h5>
+      <h5 id="ifEmpty" *ngIf="cartProducts.length == 0">העגלה שלך ריקה</h5>
       <ng-container *ngIf="productsDetails.length > 0">
         <span *ngFor="let productDetail of productsDetails; let i = index">
           <p *ngFor= "let product of productDetail">
@@ -57,7 +57,7 @@
              פתח\סגור את עגלת הקניות
           </mat-panel-description>
         </mat-expansion-panel-header>
-        <h5 id="ifEmpty" *ngIf="items.length === 0">העלה שלך ריקה</h5>
+        <h5 id="ifEmpty" *ngIf="items.length === 0">העגלה שלך ריקה</h5>
         <ng-container>
           <p *ngFor="let item of items; let i = index">
               מוצר: {{item.name}}
