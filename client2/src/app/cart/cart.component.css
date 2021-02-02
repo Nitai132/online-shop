@@ -68,18 +68,23 @@ input[type=number]{
 .deleteBtn {
     position: relative;
     bottom: 27px;
+    left: 35px;
 }
 
 .increaseBtn {
     position: relative;
     right: 70px;
     bottom: 29px;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 .decreaseBtn {
    position: relative;
    right: 80px;
    bottom: 30px;
+   font-size: 30px;
+   cursor: pointer;
 }
 
 .deleteAllBtn {

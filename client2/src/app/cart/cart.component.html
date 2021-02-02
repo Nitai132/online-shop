@@ -21,17 +21,13 @@
             <span *ngIf="cartProducts[i]">מחיר סופי למוצר:{{product.price*cartProducts[i].amount}}₪</span> 
             <br />
             <img class="cartImg" src="/img/{{product.img}}">
-            <button mat-mini-fab class="decreaseBtn" (click)="decreaseAmount(cartProducts[i].productId)" color="secondary">
-              <mat-icon>
-                  remove
-              </mat-icon>
-            </button>
+            <span class="decreaseBtn" (click)="decreaseAmount(cartProducts[i].productId)" color="secondary">
+              -
+            </span>
             <span class="amount" *ngIf="cartProducts[i]"> {{cartProducts[i].amount}} </span>
-            <button mat-mini-fab class="increaseBtn" (click)="increaseAmount(cartProducts[i].productId)" color="secondary">
-              <mat-icon>
-                add
-              </mat-icon>
-            </button>
+            <span class="increaseBtn" (click)="increaseAmount(cartProducts[i].productId)" color="secondary">
+              +
+            </span>
             <button mat-mini-fab class="deleteBtn" (click)="deleteItem(cartProducts[i].productId)" color="warn">
               <mat-icon>delete</mat-icon>
             </button>
@@ -71,17 +67,13 @@
               <span *ngIf="items[i]">מחיר סופי למוצר:{{item.price * item.amount}}₪</span> 
               <br />
               <img class="cartImg" src="/img/{{item.img}}">
-              <button mat-mini-fab class="decreaseBtn" (click)="unsignedDecreaseAmount(i)" color="secondary">
-                <mat-icon>
-                    remove
-                </mat-icon>
-              </button>
+              <span class="decreaseBtn" (click)="unsignedDecreaseAmount(i)" color="secondary">
+                 -
+              </span>
               <span class="amount" *ngIf="items[i]">{{item.amount}}</span>
-              <button mat-mini-fab class="increaseBtn" (click)="unsignedIncreaseAmount(i)" color="secondary">
-                <mat-icon>
-                  add
-                </mat-icon>
-              </button>
+              <span class="increaseBtn" (click)="unsignedIncreaseAmount(i)" color="secondary">
+                +
+              </span>
               <button mat-mini-fab class="deleteBtn" (click)="unsignedDeleteItem(i)" color="warn">
                 <mat-icon>delete</mat-icon>
               </button>

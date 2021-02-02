@@ -49,7 +49,6 @@ export class MainPageComponent implements OnInit {
 
   addProductToCart(productId) {
     const objToSend = {productId: productId, cartId: this.cart}
-    console.log(objToSend)
     fetch('/api/cart/addProduct', {
       method: 'POST',
       mode: 'cors', 
@@ -140,7 +139,6 @@ export class MainPageComponent implements OnInit {
       // this.router.navigate(['/login']);
     })
     .then(() => {
-      console.log(this.userDetails._id)
       fetch(`/api/cart/findCart/${this.userDetails._id}`)
       .then(res => res.json())
       .then(cart => {
