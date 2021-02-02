@@ -45,7 +45,7 @@
         </span>
     </mat-toolbar>
     <app-products *ngIf="deviceXs === false" (unsignedProductAdded)="unsignedCartUpdated($event)" (productAdded)="addProductToCart($event)" (productEdit)="editProduct($event)" [deviceXs]="deviceXs" [isAdmin]="userDetails.isAdmin"></app-products>
-    <div id="slider" style="object-fit: cover;">
+    <div id="slider" style="object-fit: cover;" *ngIf="deviceXs === true">
         <ng-image-slider
         style="object-fit: cover;"
         [images]="imageObject" #nav
@@ -53,6 +53,17 @@
         [infinite]="true"
         [autoSlide]="3"
         [imageSize]="{width: '100%', height: '350px'}"
+        slideImage="1">
+        </ng-image-slider>
+    </div>
+    <div id="slider" style="object-fit: cover;" *ngIf="deviceXs === false">
+        <ng-image-slider
+        style="object-fit: cover;"
+        [images]="imageObject" #nav
+        [images]="imageObject"
+        [infinite]="true"
+        [autoSlide]="3"
+        [imageSize]="{width: '33%', height: '350px'}"
         slideImage="1">
         </ng-image-slider>
     </div>
