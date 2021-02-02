@@ -12,7 +12,7 @@
 @media screen and (max-width: 768px) {
     .container {
         width: 100%;
-        margin-top: 100px;
+        margin-top: 170px;
     }
 }
 
@@ -99,4 +99,8 @@ input[type=number]{
 #uploadFile {
     position: relative;
     left: 40px;
+}
+
+.material-icons{ 
+    color: grey;
 }

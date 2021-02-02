@@ -4,6 +4,7 @@
     height: 230px;
     width: 100%;
     background-color: white;
+    z-index: 10;
 }
 
 @media screen and (max-width: 768px) {
@@ -20,6 +21,8 @@
     position: relative;
     top: 0;
     width: 100%;
+    z-index: 1;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -344,13 +347,20 @@
     left: 80%;
     font-size: 30px;
     transform: translate(-50%);  
+    z-index: 9999;
+
 }
 
 #phone-number-mobile {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     text-align: center;
     height: 50px;
-    background-color: rgb(175,206,157);
+    background-color: #9FD0C4;
     color: black;
+    shape-outside:linear-gradient(transparent,transparent);
+    z-index: 100;
 }
 
 #phone-number-text-mobile {
