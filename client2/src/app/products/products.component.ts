@@ -52,6 +52,7 @@ export class ProductsComponent implements OnInit {
     existingItems.push(obj);
     localStorage.setItem("items", JSON.stringify(existingItems));
     this.unsignedProductAdded.emit(existingItems);
+    alertify.success('המוצר נוסף לעגלה בהצלחה')
   }
 
 
@@ -73,6 +74,7 @@ export class ProductsComponent implements OnInit {
 
   addProductToCart(productId) {
     this.productAdded.emit(productId);
+    alertify.success('המוצר נוסף לעגלה בהצלחה')
   }
 
   editProduct(id, name, price, img) {
