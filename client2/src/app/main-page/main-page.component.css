@@ -343,12 +343,25 @@
 
 #phone-number {
     position: absolute;
+    border-radius: 25px;
+    background:#9FD0C4;
+    padding: 20px; 
+    width: 290px;
+    height: 10px;  
     top: 170px;
-    left: 80%;
+    left: 12.5%;
     font-size: 30px;
     transform: translate(-50%);  
     z-index: 9999;
 
+}
+
+#phone-number-pc {
+    font-size: 25px;
+    position: relative;
+    right: 12px;
+    bottom: 12px;
+    color: white;
 }
 
 #phone-number-mobile {
@@ -365,7 +378,8 @@
 
 #phone-number-text-mobile {
     position: relative;
-    color: black;
+    text-decoration: none;
+    color: white;
     font-size: 20px;
     text-align: center;
     top: 25%;
@@ -375,5 +389,9 @@
     position: absolute;
     top: 0;
     right: 80px;
+}
+
+.phone-number-header {
+    display: inline;
 }
 

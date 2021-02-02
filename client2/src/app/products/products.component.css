@@ -187,9 +187,10 @@ button.mat-button {
 
 #menu-btn {
     position: fixed;
+    color: grey;
     top: 0;
     right: 0;
-    top: 6px;
+    top: 8px;
     right: 10px;
     z-index: 101;
 }
