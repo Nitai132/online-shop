@@ -247,7 +247,7 @@
         position: relative;
         display:inline-block;
         left: 178px;
-        top: 20px;
+        top: 10px;
 
     }
 }
@@ -262,7 +262,7 @@
         height: 20px;
         display:inline-block;
         left: 178px;
-        bottom: 15px;
+        bottom: 30px;
        
     }
 }
@@ -302,7 +302,7 @@
 @media screen and (max-width: 768px) {
     #login-btn {
         position: relative;
-        bottom: 20px;
+        bottom: 35px;
         width: 150%;
         left: 200px;
     }
