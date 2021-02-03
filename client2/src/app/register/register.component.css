@@ -2,42 +2,116 @@
     text-align: center;
 }
 
+
 #field1 {
     position: absolute;
-    left: 68%;
+    left: 75%;
     transform: translate(-50%);  
+    text-align: right;
+
+}
+
+@media screen and (max-width: 768px) {
+    #field1 {
+        left: 50%;
+    }
 }
 
 #field2 {
     position: absolute;
-    left: 50%;
-    transform: translate(-50%);  }
+    left: 52%;
+    transform: translate(-50%); 
+    text-align: right;
+
+ }
+
+    @media screen and (max-width: 768px) {
+        #field2 {
+            left: 50%;
+            top: 200px;
+        }
+    }
 
 #field3 {
     position: absolute;
-    left: 33%;
+    left:30%;
     transform: translate(-50%);  
+    text-align: right;
+
+}
+
+@media screen and (max-width: 768px) {
+    #field3 {
+        left: 50%;
+        top: 300px;
+    }
 }
 
 #field4 {
     position: absolute;
-    left: 30%;
-    transform: translate(-50%);  }
+    left: 10%;
+    transform: translate(-50%);  
+    text-align: right;
+
+}
+
+@media screen and (max-width: 768px) {
+    #field4 {
+        left: 50%;
+    }
+}
 
 #field5 {
-    left: 45%;
+    left: 38%;
     transform: translate(-50%);  
+}
+
+@media screen and (max-width: 768px) {
+    #field5 {
+        left: 50%;
+        top: 80px;
+        z-index: 1000;
+    }
 }
 
 #field6 {
     position: absolute;
-    left: 75%;
+    left: 63%;
     transform: translate(-50%);  
+}
+
+@media screen and (max-width: 768px) {
+    #field6 {
+        left: 50%;
+        top: 230px;
+    }
 }
 #field7 {
     position: absolute;
-    left: 60%;
+    left: 90%;
     transform: translate(-50%);  
+}
+
+@media screen and (max-width: 768px) {
+    #field7 {
+        left: 50%;
+        top: 330px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #next2 {
+       display: inline;
+       right: 1px;
+       top: 20px;
+       z-index: 1;
+    }
+}
+@media screen and (max-width: 768px) {
+    .next-div {
+        width: 50px;
+        z-index: 1;
+    }
 }
 
 #note {
@@ -46,7 +120,15 @@
 
 #next1 {
     position: absolute;
-    right: 1250px;
+    right: 1100px;
+}
+
+@media screen and (max-width: 768px) {
+    #next1 {
+        position: absolute;
+       right: 150px;
+       top: 400px;
+    }
 }
 
 #details {
@@ -348,17 +430,23 @@
 }
 @media screen and (max-width: 768px) {
     #phone-number {
-        left: 81%;
-        width: 140px;
+        left: 74%;
+        width: 120px;
     }
 }
 #phone-number-pc {
     font-size: 25px;
     position: relative;
-    right: 12px;
+    right: 10px;
     bottom: 12px;
     color: white;
     width: 140px;
+}
+
+@media screen and (max-width: 768px) {
+    #phone-number-pc {
+        right: 18px;
+    }
 }
 
 #container {
@@ -371,9 +459,28 @@
 
 ::ng-deep mat-horizontal-stepper  {
     z-index: 1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%); 
     flex-direction: column-reverse !important;
     height: auto;
     background-image: url("/img/nael2.png");
     width: 98%;
     height: 0.01px;
+    width: 70%;
 }
+
+@media screen and (max-width: 768px) {
+    ::ng-deep mat-horizontal-stepper {
+        width: 100%;
+    }
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected {
+    background-color: #9FD0C4; 
+ }
+
+ #welcome {
+     color: #9FD0C4;
+     font-size: 50px;
+ }

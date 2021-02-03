@@ -13,18 +13,18 @@
       <img src="/img/whatsapp.png" class="WA-Img">
   </button>
   <div id="phone-number">
-      <span id="phone-number-pc"> 052-22222222</span>
+      <span id="phone-number-pc"> 05222222222</span>
   </div>
 </mat-toolbar>
 <div id="container">
   <div class="title">
-      <h1>יצירת משתמש חדש</h1>
-      <h5>
-          ברוך הבא! אנא מלא את הטופס לפי ההוראות על מנת ליצור משתמש חדש
+      <h1 id="welcome">!ברוכים הבאים</h1>
+      <h3>
+          .הגעת לטופס יצירת משתמש כדי להתחיל איתנו את הדרך
           <br />
-          יש לוודא שכל הפרטים נכונים על מנת לקבל את המשלוח לכתובת הנכונה
-      </h5>
-      <h4 id="note">הערה: כפתור "המשך" יופיע רק לאחר שכל הפרטים מולאו בצורה נכונה</h4>
+            !אנא מלא את הפרטים הבאים ואת הכתובת המדויקת כדי שהמשלוח יגיע עד אלייך
+        </h3>
+      <h2 id="note"> כפתור "המשך" יופיע רק לאחר שכל הפרטים נרשמו בצורה נכונה</h2>
   </div>
   <mat-horizontal-stepper #stepper [linear]="isLinear" #stepper class="register-form" linear>
       <mat-step [stepControl]="firstFormGroup">
@@ -68,9 +68,9 @@
               <mat-label>שם משפחה</mat-label>
               <input matInput [(ngModel)]="lastName" formControlName="secondCtrl" required>
           </mat-form-field>
-          <div>
+          <div class="next-div">
             <button mat-button matStepperPrevious>חזור</button>
-            <button mat-button matStepperNext *ngIf="city && street && firstName && lastName">הבא</button>
+            <button mat-button matStepperNext id="next2" *ngIf="city && street && firstName && lastName">המשך</button>
           </div>
         </form>
       </mat-step>

@@ -25,16 +25,28 @@ export class MainPageComponent implements OnInit {
   addedProducts = [];
   itemToEdit = {};
   imageObject = [{
-    image: '/img/mainImg1.jpeg',
-    thumbImage: '/img/mainImg1.jpeg',
+    image: '/img/mainImg1.jpg',
+    thumbImage: '/img/mainImg1.jpg',
     alt: 'Image alt'
   },{
-    image: '/img/mainImg3.jpeg',
-    thumbImage: '/img/mainImg3.jpeg',
+    image: '/img/mainImg2.jpg',
+    thumbImage: '/img/mainImg2.jpg',
+    alt: 'Image alt'
+  },{
+    image: '/img/mainImg3.jpg',
+    thumbImage: '/img/mainImg3.jpg',
+    alt: 'Image alt'
+  },{
+    image: '/img/mainImg4.jpg',
+    thumbImage: '/img/mainImg1.jpg',
+    alt: 'Image alt'
+  },{
+    image: '/img/mainImg5.jpg',
+    thumbImage: '/img/mainImg3.jpg',
     alt: 'alt of image',
   },{
-    image: '/img/icecream.jpg',
-    thumbImage: '/img/icecream.jpg',
+    image: '/img/mainImg6.jpg',
+    thumbImage: '/img/mainImg6.jpg',
     alt: 'alt of image',
   }]
 
