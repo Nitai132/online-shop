@@ -24,19 +24,19 @@
           <br />
             אנא מלא את הפרטים הבאים ואת הכתובת המדויקת<br /> !כדי שהמשלוח יגיע עד אלייך
         </h3>
-      <h2 id="note"> .כפתור "המשך" יופיע רק לאחר שכל הפרטים נרשמו בצורה נכונה</h2>
-      <h3 id="text">
+      <h2 id="note"> כפתור "המשך" יופיע רק לאחר שכל<br /> .הפרטים נרשמו בצורה נכונה</h2>
+      <h2 id="text">
          !מחכים לך
          <br />
          Super Fruit
-      </h3>
+      </h2>
   </div>
   <mat-horizontal-stepper #stepper [linear]="isLinear" #stepper class="register-form" linear>
       <mat-step [stepControl]="firstFormGroup">
         <br />
         <br />
         <form [formGroup]="firstFormGroup">
-          <ng-template matStepLabel>אימייל וסיסמא</ng-template>
+          <ng-template matStepLabel><span class="matlabel">אימייל וסיסמא</span></ng-template>
             <mat-form-field id="field1">
               <mat-label>אימייל</mat-label>
               <input matInput [(ngModel)]="email" formControlName="firstCtrl" required>
@@ -56,7 +56,7 @@
       </mat-step>
       <mat-step [stepControl]="secondFormGroup">
         <form [formGroup]="secondFormGroup">
-          <ng-template matStepLabel>מידע אישי וכתובת</ng-template>
+          <ng-template matStepLabel><span class="matlabel">מידע אישי וכתובת</span></ng-template>
           <mat-form-field id="field4">
               <mat-label>עיר</mat-label>
               <input matInput [(ngModel)]="city" formControlName="secondCtrl" required>
@@ -80,7 +80,7 @@
         </form>
       </mat-step>
       <mat-step>
-        <ng-template matStepLabel>סיום</ng-template>
+        <ng-template matStepLabel><span class="matlabel">סיום</span></ng-template>
         <p>פרטייך הוזנו בהצלחה. יש לוודא כי הפרטים נכונים וללחוץ על אישור</p>
         <h4 id="details">
           אימייל: {{email}}
