@@ -356,7 +356,7 @@
 }
 
 #container {
-    background: transparent url("http://localhost:4422/img/nael.jpg");
+    background: transparent url("/img/nael.jpg");
     height: 100%;
     position: relative;
     background-size: cover;
@@ -367,7 +367,7 @@
     z-index: 1;
     flex-direction: column-reverse !important;
     height: auto;
-    background-image: url("http://localhost:4422/img/nael2.png");
+    background-image: url("/img/nael2.png");
     width: 98%;
     height: 0.01px;
 }
