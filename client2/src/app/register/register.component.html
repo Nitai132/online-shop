@@ -1,17 +1,4 @@
 <mat-toolbar class="toolBar row" >
-  <form class="login-form">
-      <mat-form-field id="emailInput" style="text-align: right">
-          <mat-label>אימייל</mat-label>
-          <input matInput placeholder="אימייל" (change)="onEmailChange($event)">
-      </mat-form-field>
-      <mat-form-field id="passInput" style="text-align: right">
-          <mat-label>סיסמא</mat-label>
-          <input type="password" matInput (change)="onPasswordChange($event)">
-      </mat-form-field>
-      <button mat-raised-button color="primary" id="login-btn" (click)="login()">
-          התחברות
-      </button>
-  </form>
   <img src="/img/Logo.png" id="logo" class="col-4">
   <!-- <button mat-button class="logoutBtn" (click)="logout()" color="warn">
       Logout
@@ -26,7 +13,7 @@
       <img src="/img/whatsapp.png" class="WA-Img">
   </button>
   <div id="phone-number">
-      <span id="phone-number-pc">להזמנות בטל' 052-22222222</span>
+      <span id="phone-number-pc"> 052-22222222</span>
   </div>
 </mat-toolbar>
 <div id="container">
