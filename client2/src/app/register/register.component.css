@@ -477,6 +477,9 @@
  #welcome {
      color: #9FD0C4;
      font-size: 50px;
+     position: relative;
+     top: 70px;
+     display: inline;
  }
 
  #text {

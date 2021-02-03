@@ -68,11 +68,11 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 60%;
-        bottom: 15%;
+        left: 65%;
+        bottom: 20%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
-        width: 40px;
+        width: 60px;
     }
 }
 
@@ -81,11 +81,11 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 70%;
-        bottom: 25%;
+        left: 60%;
+        bottom: 20%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
-        width: 40px;
+        width: 60px;
     }
 }
 
@@ -112,11 +112,11 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 65%;
-        bottom: 15%;
+        left: 62.5%;
+        bottom: 20%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
-        width: 40px;     
+        width: 60px;
     }
 }
 
@@ -129,7 +129,7 @@
         bottom: 25%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
-        width: 40px;     
+        width: 60px;
     }
 }
 
@@ -166,11 +166,11 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 70%;
-        bottom: 15%;
+        left: 60%;
+        bottom: 20%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
-        width: 40px;
+        width: 60px;
     }
 }
 
@@ -183,7 +183,7 @@
         bottom: 25%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
-        width: 40px;
+        width: 60px;
     }
 }
 
