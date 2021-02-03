@@ -7,10 +7,12 @@
                 <mat-label>אימייל</mat-label>
                 <input matInput placeholder="אימייל" (change)="onEmailChange($event)">
             </mat-form-field>
+            <br />
             <mat-form-field id="passInput" style="text-align: right">
                 <mat-label>סיסמא</mat-label>
                 <input type="password" matInput (change)="onPasswordChange($event)">
             </mat-form-field>
+            <br />
             <button mat-raised-button color="primary" id="login-btn" (click)="login()">
                 התחברות
             </button>

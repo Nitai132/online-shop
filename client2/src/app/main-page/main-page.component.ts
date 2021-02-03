@@ -29,16 +29,8 @@ export class MainPageComponent implements OnInit {
     thumbImage: '/img/mainImg1.jpeg',
     alt: 'Image alt'
   },{
-    image: '/img/mainImg2.jpg',
-    thumbImage: '/img/mainImg2.jpg',
-    alt: 'alt of image',
-  },{
     image: '/img/mainImg3.jpeg',
     thumbImage: '/img/mainImg3.jpeg',
-    alt: 'alt of image',
-  },{
-    image: '/img/shake.jpg',
-    thumbImage: '/img/shake.jpg',
     alt: 'alt of image',
   },{
     image: '/img/icecream.jpg',

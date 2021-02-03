@@ -21,6 +21,54 @@ export class RegisterComponent implements OnInit {
   street='';
   firstName='';
   lastName='';
+  Email = '';
+  Password = '';
+  userDetails = {
+    firstName: '',
+    _id: '',
+    isAdmin: null
+  };
+
+  openIG() {
+    window.open("//" + 'www.instagram.com/super_fruit_israel/', '_blank');
+  }
+
+  openFB() {
+    window.open("//" + 'www.facebook.com/Fruits-Co-109454277622361', '_blank');
+  }
+
+  
+  onPasswordChange({target: {value}}) {
+    this.Password = value;
+  };
+
+  onEmailChange({target: {value}}) {
+    this.Email = value;
+  };
+
+  login() {
+    const objToSend = {username: this.Email, password: this.Password}
+    fetch('/api/auth/login', {
+      method: 'POST',
+      mode: 'cors', 
+      cache: 'no-cache',
+      credentials:'include',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      redirect: 'follow', 
+      referrerPolicy: 'no-referrer', 
+      body: JSON.stringify(objToSend)
+    })
+    .then((res) => res.json())
+    .then((data) => {
+        this.userDetails = data;
+        window.location.reload();
+      }).catch(() => {
+      alertify.error('שם המשתמש או הסיסמא אינם נכונים')
+    })
+  };
+  
 
   register() {
     const objToSend = {
