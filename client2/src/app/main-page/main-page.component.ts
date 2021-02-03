@@ -38,11 +38,11 @@ export class MainPageComponent implements OnInit {
     alt: 'Image alt'
   },{
     image: '/img/mainImg4.jpg',
-    thumbImage: '/img/mainImg1.jpg',
+    thumbImage: '/img/mainImg4.jpg',
     alt: 'Image alt'
   },{
     image: '/img/mainImg5.jpg',
-    thumbImage: '/img/mainImg3.jpg',
+    thumbImage: '/img/mainImg5.jpg',
     alt: 'alt of image',
   },{
     image: '/img/mainImg6.jpg',

@@ -12,8 +12,8 @@
   <button class="WA-Btn">
       <img src="/img/whatsapp.png" class="WA-Img">
   </button>
-  <div id="phone-number">
-      <span id="phone-number-pc"> 05222222222</span>
+  <div id="phone-number" *ngIf="deviceXs === false">
+      <span id="phone-number-pc"> טל' להזמנות 052-2222222</span>
   </div>
 </mat-toolbar>
 <div id="container">

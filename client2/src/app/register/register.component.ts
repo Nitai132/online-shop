@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Router} from "@angular/router"
 declare let alertify: any;
+import { MediaChange, MediaObserver } from '@angular/flex-layout';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-register',
@@ -13,7 +15,9 @@ export class RegisterComponent implements OnInit {
   isLinear = true;
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
-  constructor(private _formBuilder: FormBuilder, private router: Router) {}
+  constructor(private _formBuilder: FormBuilder, private router: Router, public mediaObserver: MediaObserver) {}
+  mediaSub: Subscription;
+  deviceXs: boolean;
   email = '';
   password = '';
   confirmPassword = '';
@@ -100,11 +104,19 @@ export class RegisterComponent implements OnInit {
     })
   }
   ngOnInit(): void {
+    this.mediaSub = this.mediaObserver.media$.subscribe((result:MediaChange)=>{
+      this.deviceXs = result.mqAlias === 'xs' ? true : false;  
+    });
     this.firstFormGroup = this._formBuilder.group({
       firstCtrl: ['', Validators.required]
     });
     this.secondFormGroup = this._formBuilder.group({
       secondCtrl: ['', Validators.required]
-    });
+    })
   }
+
+  ngOnDestroy() {
+    this.mediaSub.unsubscribe();
+  }
+
 }
