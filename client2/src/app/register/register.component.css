@@ -8,6 +8,8 @@
     left: 75%;
     transform: translate(-50%);  
     text-align: right;
+    color: white;
+    background-color: white;
 
 }
 
@@ -116,6 +118,8 @@
 
 #note {
     color: #9FD0C4;
+    font-family: 'Assistant', sans-serif;
+
 }
 
 #next1 {
@@ -284,7 +288,7 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 60%;
+        left: 65%;
         top: 20%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
@@ -381,7 +385,7 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 68.5%;
+        left: 63.5%;
         top: 20%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
@@ -487,8 +491,28 @@
      position: relative;
      top: 20px;
      display: inline;
+     font-family: 'Assistant', sans-serif;
  }
 
  #text {
      color: white;
+     font-family: 'Assistant', sans-serif;
+
  }
+
+ ::ng-deep .mat-focused .mat-form-field-label {
+    color: white !important;
+   }
+  
+   ::ng-deep.mat-form-field-underline {
+    background-color: white !important;
+  } 
+  
+  ::ng-deep.mat-form-field-ripple {
+   background-color: white !important;;
+  }
+
+  ::ng-deep mat-label {
+      color: white;
+  }
+

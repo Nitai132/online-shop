@@ -211,6 +211,7 @@ button.mat-button {
     position: relative;
     text-align: center;
     top: 0;
+    font-family: 'Assistant', sans-serif;
 }
 
 @media screen and (max-width: 768px) {
