@@ -36,7 +36,14 @@
         <br />
         <br />
         <form [formGroup]="firstFormGroup">
-          <ng-template matStepLabel><span class="matlabel">אימייל וסיסמא</span></ng-template>
+          <ng-template matStepLabel>
+            <span class="matlabel" *ngIf="deviceXs === false">
+              אימייל וסיסמא
+            </span>
+            <span class="matlabel" *ngIf="deviceXs === true">
+              משתמש
+            </span>
+          </ng-template>
             <mat-form-field id="field1">
               <mat-label>אימייל</mat-label>
               <input matInput [(ngModel)]="email" formControlName="firstCtrl" required>
@@ -56,7 +63,14 @@
       </mat-step>
       <mat-step [stepControl]="secondFormGroup">
         <form [formGroup]="secondFormGroup">
-          <ng-template matStepLabel><span class="matlabel">מידע אישי וכתובת</span></ng-template>
+          <ng-template matStepLabel>
+            <span class="matlabel" *ngIf="deviceXs === false">
+              מידע אישי וכתובת
+            </span>
+            <span class="matlabel" *ngIf="deviceXs === true">
+              פרטים
+            </span>
+          </ng-template>
           <mat-form-field id="field4">
               <mat-label>עיר</mat-label>
               <input matInput [(ngModel)]="city" formControlName="secondCtrl" required>
@@ -80,7 +94,10 @@
         </form>
       </mat-step>
       <mat-step>
-        <ng-template matStepLabel><span class="matlabel">סיום</span></ng-template>
+        <ng-template matStepLabel>
+          <span class="matlabel">
+            סיום
+          </span></ng-template>
         <p>פרטייך הוזנו בהצלחה. יש לוודא כי הפרטים נכונים וללחוץ על אישור</p>
         <h4 id="details">
           אימייל: {{email}}
