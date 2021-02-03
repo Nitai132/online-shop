@@ -19,12 +19,17 @@
 <div id="container">
   <div class="title">
       <h1 id="welcome">!ברוכים הבאים</h1>
-      <h3>
+      <h3 id="text">
           .הגעת לטופס יצירת משתמש כדי להתחיל איתנו את הדרך
           <br />
             !אנא מלא את הפרטים הבאים ואת הכתובת המדויקת כדי שהמשלוח יגיע עד אלייך
         </h3>
       <h2 id="note"> כפתור "המשך" יופיע רק לאחר שכל הפרטים נרשמו בצורה נכונה</h2>
+      <h3 id="text">
+         !מחכים לך
+         <br />
+         Super Fruit
+      </h3>
   </div>
   <mat-horizontal-stepper #stepper [linear]="isLinear" #stepper class="register-form" linear>
       <mat-step [stepControl]="firstFormGroup">

@@ -115,7 +115,7 @@
 }
 
 #note {
-    color: red
+    color: grey;
 }
 
 #next1 {
@@ -483,4 +483,8 @@
  #welcome {
      color: #9FD0C4;
      font-size: 50px;
+ }
+
+ #text {
+     color: white;
  }
