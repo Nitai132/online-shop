@@ -446,16 +446,14 @@
 }
 
 #container {
-    background: transparent url("/img/nael.jpg");
-    height: 100%;
+    background: transparent url("http://localhost:4422/img/nael.jpg");
+    height: 800px;
     position: relative;
     background-size: cover;
     z-index: 100;
 }
 @media screen and (max-width: 768px) { 
     #container {
-        width: 100vw;
-        height: 100vh;
         background-position: center, center;
     }
 }
