@@ -57,9 +57,6 @@ app.use('/api/count', countController);
 app.use('/api/products', productsController);
 app.use('/api/categories', categoriesController);
 app.use('/api/cart', cartController);
-app.use('*', isValid);
-app.use('/api/orders', ordersController);
-
 app.post('/api/upload', (req, res) => {
     req.files.mypic.mv(path.join(__dirname, 'public/img', req.files.mypic.name), (err) => {
         if (err) {
@@ -82,6 +79,9 @@ app.post('/api/pdf', (req, res) => {
 app.get("/*", function(req, res) {
     res.sendFile(path.join(__dirname, "./client3/dist/client3/index.html"));
   });
+
+app.use('*', isValid);
+app.use('/api/orders', ordersController);
 
   
 const init = async () => {
