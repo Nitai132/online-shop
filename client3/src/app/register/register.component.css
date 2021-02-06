@@ -446,7 +446,7 @@
 }
 
 #container {
-    background: transparent url("http://localhost:4422/img/nael.jpg");
+    background: transparent url("/img/nael.jpg");
     height: 800px;
     position: relative;
     background-size: cover;
