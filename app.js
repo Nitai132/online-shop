@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static("client2/dist/client2"));
+app.use(express.static("client3/dist/client3"));
 app.use(fileUpload());
 
 app.use(session({
@@ -57,7 +57,7 @@ app.use('/api/count', countController);
 app.use('/api/products', productsController);
 app.use('/api/categories', categoriesController);
 app.use('/api/cart', cartController);
-// app.use('*', isValid);
+app.use('*', isValid);
 app.use('/api/orders', ordersController);
 
 app.post('/api/upload', (req, res) => {
@@ -80,7 +80,7 @@ app.post('/api/pdf', (req, res) => {
 });
 
 app.get("/*", function(req, res) {
-    res.sendFile(path.join(__dirname, "./client2/dist/client2/index.html"));
+    res.sendFile(path.join(__dirname, "./client3/dist/client3/index.html"));
   });
 
   

@@ -1,0 +1,263 @@
+.mat-toolbar {
+    color: black;
+    background-color: rgb(174, 239, 186);
+    height: 65px;
+}
+
+#hello {
+    margin-left: 123px;
+}
+
+#welcome {
+    padding-left: 21%;
+}
+
+#contact {
+    padding-left: 12%;
+}
+
+.cartDiv {
+    width: 33%;;
+    height: 100% auto;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .cartDiv {
+        position: relative;
+        width: 100%;;
+        top: 0;
+        height: 100% auto;
+        text-align: center;
+    }
+}
+.cartImg {
+    position: relative;
+    bottom: 70px;
+    left: 70px;
+    width: 100px;
+}
+
+.priceTxt {
+    position: relative;
+    bottom: 80px;
+    left: 50px;
+}
+
+.noChanges {
+    color: red;
+}
+
+.returnAnchor {
+    position: relative;
+    left: 150px;
+    bottom: 40px;
+}
+
+.orderDiv {
+    position: absolute;
+    margin-left: 505px;
+    top: 0;
+    top: 225px;
+    width: 68%;
+    height: 100%;
+    text-align: center;
+    background-color: lightgrey;
+}
+@media screen and (max-width: 768px) {
+    .orderDiv {
+        position: relative;
+        margin-left: 0px;
+        top: 0;
+        top: 20px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: lightgrey;
+    }
+}
+
+.purchaseBtn {
+    background-color: rgb(64, 151, 64);
+    color: white;
+}
+
+.datePicker{
+    margin-left: 25px;
+}
+
+#ifEmpty {
+    position: absolute;
+    left: 190px;
+    color: red
+}
+
+
+.toolBar {
+    position: relative;
+    top: 0;
+    height: 230px;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+    .toolBar {
+        position: relative;
+        top: 0;
+        background-color: white;
+        height: 170px;
+        width: 100%;
+    }
+}
+
+#logo {
+    object-fit: cover;
+    height: 210px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+    #logo {
+        height: 135px;
+        width: 190px;
+        position: absolute;
+        float: left;
+        left: 0; 
+        top: 0;
+        top: 20px;
+        left: 25px;
+        transform: none;
+    }
+}
+
+#logout-Btn {
+    position: absolute;
+    left: 0;
+    left: 80%;
+    transform: translate(-50%); 
+}
+
+@media screen and (max-width: 768px) {
+    #logout-Btn {
+        position: absolute;
+        bottom: 20px;
+        left: 285px;
+    }
+}
+
+.fb-Img {
+    width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .fb-Img {
+        width: 50px;
+    }
+}
+
+.fb-btn {
+    background-color: white;
+    position: absolute;
+    border: none;
+    left: 10%;
+    transform: translate(-50%);  
+    width: 40px;
+}
+@media screen and (max-width: 768px) {
+    .fb-btn {
+        background-color: white;
+        border: none;
+        position: relative;
+        left: 65%;
+        bottom: 20%;
+        margin-left: 0px;
+        transform: translate(-50%, -50%);  
+        width: 60px;
+    }
+}
+
+.IG-Btn {
+    background-color: white;
+    border: none;
+    position: absolute;
+    left: 17%;
+    transform: translate(-50%);  
+    width: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .IG-Btn {
+        background-color: white;
+        border: none;
+        position: relative;
+        left: 62.5%;
+        bottom: 20%;
+        margin-left: 0px;
+        transform: translate(-50%, -50%);  
+        width: 60px;
+    }
+}
+
+.IG-Img {
+    width: 100px;
+}
+
+.WA-Btn {
+    background-color: white;
+    border: none;
+    position: absolute;
+    left: 24%;
+    transform: translate(-50%);  
+    width: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .WA-Btn {
+        background-color: white;
+        border: none;
+        position: relative;
+        left: 60%;
+        bottom: 20%;
+        margin-left: 0px;
+        transform: translate(-50%, -50%);  
+        width: 60px;
+    }
+}
+
+.WA-Img {
+    width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .WA-Img {
+        width: 50px;
+    }
+}
+
+#phone-number {
+    position: absolute;
+    border-radius: 25px;
+    background:#9FD0C4;
+    padding: 20px; 
+    width: 290px;
+    height: 10px;  
+    top: 170px;
+    left: 19%;
+    transform: translate(-50%); 
+    font-size: 30px;
+    z-index: 9999;
+
+}
+
+#phone-number-pc {
+    font-size: 25px;
+    position: relative;
+    right: 12px;
+    bottom: 12px;
+    color: white;
+}

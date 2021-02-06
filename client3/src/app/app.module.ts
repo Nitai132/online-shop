@@ -20,7 +20,6 @@ import {MatMenuModule} from '@angular/material/menu';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainPageComponent } from './main-page/main-page.component';
 import { RegisterComponent } from './register/register.component';
@@ -33,7 +32,6 @@ import { OrderComponent } from './order/order.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     MainPageComponent,
     RegisterComponent,
     CartComponent,
@@ -63,12 +61,10 @@ import { OrderComponent } from './order/order.component';
     CommonModule,
     FormsModule,
     RouterModule.forRoot([
-    { path: 'login', component: LoginComponent },
     { path: '', component: MainPageComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'order', component: OrderComponent }
 ], {
-    initialNavigation: 'enabled'
 }),
   ],
   providers: [],

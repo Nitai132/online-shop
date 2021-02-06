@@ -1,0 +1,69 @@
+<div class="categories-container" *ngIf="isAdmin === 0 && deviceXs === false || !isAdmin && isAdmin !== 0 && deviceXs === false">
+    <mat-button-toggle-group #group="matButtonToggleGroup" class="categories2" name="fontStyle" aria-label="Font Style" value={{selectedCategory}}>
+        <mat-button-toggle class="categories" *ngFor="let category of categories; let i = index" (click)="selectedChanged(group.value)" value="{{category._id}}">{{category.name}}</mat-button-toggle>
+    </mat-button-toggle-group>
+</div>
+<div class="categories-container-admin" *ngIf="isAdmin === 1 && deviceXs === false">
+    <mat-button-toggle-group #group="matButtonToggleGroup" name="fontStyle" aria-label="Font Style" value={{selectedCategory}}>
+        <mat-button-toggle class="categories" *ngFor="let category of categories; let i = index" (click)="selectedChanged(group.value)" value="{{category._id}}">{{category.name}}</mat-button-toggle>
+    </mat-button-toggle-group>
+</div>
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" id="menu-btn" *ngIf="deviceXs === true">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu" class="menu-div">
+    <button mat-button id="menu-display" *ngFor="let category of categories; let i = index">
+        <span (click)="selectedChangedMobilie($event)" value="{{category._id}}">{{category.name}}</span>
+        <!-- <img src="/img/icon{{i}}.png" width="20px" id="icon-img"> -->
+        <br />
+    </button>
+  </mat-menu>
+<div class="products-container">
+    <form class="search">
+        <mat-form-field class="searchInput">
+          <mat-label>
+            <span class="material-icons">
+                search
+            </span></mat-label>
+          <input  (keyup)="filterProducts($event)" matInput placeholder="לדוגמא: אבטיח">
+        </mat-form-field>
+    </form>
+    <div id="category-title">
+        {{categoryName}} <span *ngIf="selectedCategory === '5fdff02fc5c35c65c4f91e0f'"> - 1 ק"ג</span>
+    </div>
+
+    <mat-button-toggle-group #group="matButtonToggleGroup" appearance="legacy" class="fruits-menu" name="fontStyle" aria-label="Font Style" value="5fdff02fc5c35c65c4f91e0f" *ngIf="selectedCategory === '5fdff02fc5c35c65c4f91e0f' || selectedCategory ===  '601ef84c6ce9d726d8b342bb' || selectedCategory ===  '601ef8586ce9d726d8b342bc'">
+        <mat-button-toggle value="601ef84c6ce9d726d8b342bb" (click)="selectedChanged(group.value)" class="fruits-menu-item">חצי קילו</mat-button-toggle>
+        <mat-button-toggle value="601ef8586ce9d726d8b342bc" (click)="selectedChanged(group.value)" class="fruits-menu-item">שני קילו</mat-button-toggle>
+        <mat-button-toggle value="5fdff02fc5c35c65c4f91e0f" (click)="selectedChanged(group.value)" class="fruits-menu-item">קילו</mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <div *ngIf = "filteredArray.length == products.length">
+        <div class ="card" *ngFor = "let product of products">
+            <div class="column">
+                <h4 class= "product-title">{{product.name}}</h4>
+                <img class="img" src="/img/{{product.img}}">
+                <span class="product-price">₪{{product.price}}</span>
+                <div class="btn-align">
+                    <button *ngIf="isAdmin === 0" class="addBTN" mat-raised-button color="primary" (click)="addProductToCart(product._id)">הוסף לעגלה</button>
+                    <button *ngIf="!isAdmin && isAdmin !== 0" class="addBTN" mat-raised-button color="primary" (click)="unsignedAdd(product._id, product.name, product.price, product.img)">הוסף לעגלה</button>
+                    <button *ngIf="isAdmin === 1" class="addBTN" mat-raised-button color="warn" (click)="editProduct(product._id, product.name, product.price, product.img)">ערוך מוצר</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf = "filteredArray.length != products.length">
+        <div class ="card" *ngFor="let prod of filteredArray">
+            <div class="column">
+                <h4 class= "product-title">{{prod.name}}</h4>
+                <img class="img" src="/img/{{prod.img}}">
+                <span class="product-price">₪{{prod.price}}</span>
+                <div class="btn-align">
+                    <button *ngIf="isAdmin === 1" class="addBTN" mat-raised-button color="warn" (click)="editProduct(product._id, product.name, product.price, product.img)">ערוך מוצר</button>
+                    <button *ngIf="!isAdmin && isAdmin !== 0" class="addBTN" mat-raised-button color="primary" (click)="unsignedAlert()">הוסף לעגלה</button>
+                    <button *ngIf="isAdmin === 0" class="addBTN" mat-raised-button color="primary" (click)="addProductToCart(prod._id)">הוסף לעגלה</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

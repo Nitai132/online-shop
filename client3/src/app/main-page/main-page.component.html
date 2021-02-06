@@ -1,0 +1,74 @@
+<div *ngIf="deviceXs === true" id="phone-number-mobile">
+    <a href="tel:052-2222-222" id="phone-number-text-mobile"><h3 class="phone-number-header">052-2222-222</h3></a>
+ </div>
+     <mat-toolbar class="toolBar row" >
+         <form class="login-form" *ngIf="!userDetails.firstName">
+             <mat-form-field id="emailInput" style="text-align: right">
+                 <mat-label>אימייל</mat-label>
+                 <input matInput placeholder="אימייל" (change)="onEmailChange($event)" id="emailInput2">
+             </mat-form-field>
+             <br />
+             <mat-form-field id="passInput" style="text-align: right">
+                 <mat-label>סיסמא</mat-label>
+                 <input type="password" matInput (change)="onPasswordChange($event)">
+             </mat-form-field>
+             <br />
+             <button mat-raised-button color="primary" id="login-btn" (click)="login()">
+                 התחברות
+             </button>
+         </form>
+         <img src="/img/Logo.png" id="logo" class="col-4">
+         <!-- <button mat-button class="logoutBtn" (click)="logout()" color="warn">
+             Logout
+         </button> -->
+         <button id="logout-Btn" *ngIf="userDetails.firstName" mat-raised-button class="logoutBtn" (click)="logout()" color="warn">
+             התנתק
+         </button>
+         <button class="fb-btn-logged" (click)="openFB()" *ngIf="userDetails.firstName.length > 0">
+             <img src="/img/facebook.png" class="fb-Img">
+         </button>
+         <button class="fb-btn" (click)="openFB()" *ngIf="!userDetails.firstName">
+             <img src="/img/facebook.png" class="fb-Img">
+         </button>
+         <button class="IG-Btn" (click)="openIG()">
+             <img src="/img/instagram.png" class="IG-Img" *ngIf="!userDetails.firstName">
+         </button>
+         <button class="IG-Btn-logged" *ngIf="userDetails.firstName.length > 0">
+             <img src="/img/instagram.png" class="IG-Img">
+         </button>
+         <button class="WA-Btn-logged" *ngIf="userDetails.firstName.length > 0">
+             <img src="/img/whatsapp.png" class="WA-Img">
+         </button>
+         <button class="WA-Btn" *ngIf="!userDetails.firstName">
+             <img src="/img/whatsapp.png" class="WA-Img">
+         </button>
+         <div *ngIf="deviceXs === false" id="phone-number">
+             <span id="phone-number-pc">להזמנות בטל' 052-22222222</span>
+         </div>
+     </mat-toolbar>
+     <app-products *ngIf="deviceXs === false" (unsignedProductAdded)="unsignedCartUpdated($event)" (productAdded)="addProductToCart($event)" (productEdit)="editProduct($event)" [deviceXs]="deviceXs" [isAdmin]="userDetails.isAdmin"></app-products>
+     <div id="slider" style="object-fit: cover;" *ngIf="deviceXs === true">
+         <ng-image-slider
+         style="object-fit: cover;"
+         [images]="imageObject" #nav
+         [images]="imageObject"
+         [infinite]="true"
+         [autoSlide]="3"
+         [imageSize]="{width: '100%', height: '350px'}"
+         slideImage="1">
+         </ng-image-slider>
+     </div>
+     <div id="slider" style="object-fit: cover;" *ngIf="deviceXs === false">
+         <ng-image-slider
+         style="object-fit: cover;"
+         [images]="imageObject" #nav
+         [images]="imageObject"
+         [infinite]="true"
+         [autoSlide]="3"
+         [imageSize]="{width: '33%', height: '350px'}"
+         slideImage="1">
+         </ng-image-slider>
+     </div>
+ <app-cart [Product]="addedProducts" [Cart]="cart" [updateItems]="items" [isAdmin]="userDetails.isAdmin" [editDetails]="itemToEdit"></app-cart>
+ <app-products *ngIf="deviceXs === true" (unsignedProductAdded)="unsignedCartUpdated($event)" (productAdded)="addProductToCart($event)" (productEdit)="editProduct($event)" [deviceXs]="deviceXs" [isAdmin]="userDetails.isAdmin"></app-products>
+ 
