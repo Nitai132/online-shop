@@ -31,7 +31,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     store: new MongoDBStore({   
-        uri: 'mongodb+srv://nitai:nitai@cluster0.hgigh.mongodb.net/FruitCart',
+        uri: 'mongodb+srv://****:****@cluster0.hgigh.mongodb.net/FruitCart',
         collection: 'mySessions'
     }),
     cookie: {
