@@ -455,6 +455,8 @@
 @media screen and (max-width: 768px) { 
     #container {
         background-position: center, center;
+        height: 1000px;
+
     }
 }
 

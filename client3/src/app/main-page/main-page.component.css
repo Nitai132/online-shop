@@ -248,7 +248,7 @@
         display:inline-block;
         left: 178px;
         top: 10px;
-
+        z-index: 101;
     }
 }
 
