@@ -57,7 +57,7 @@
     background-color: white;
     border: none;
     position: absolute;
-    left: 12%;
+    left: 10%;
     transform: translate(-50%);  
     width: 40px;
     
@@ -125,8 +125,8 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 65%;
-        bottom: 25%;
+        left: 45%;
+        bottom: 20%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
         width: 60px;
@@ -179,8 +179,8 @@
         background-color: white;
         border: none;
         position: relative;
-        left: 44%;
-        bottom: 25%;
+        left: 46%;
+        bottom: 20%;
         margin-left: 0px;
         transform: translate(-50%, -50%);  
         width: 60px;
@@ -355,7 +355,7 @@
     #logout-Btn {
         position: absolute;
         bottom: 20px;
-        left: 285px;
+        left: 300px;
     }
 }
 
