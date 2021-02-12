@@ -57,10 +57,10 @@
 
 @media screen and (max-width: 768px) {
     .products-container {
-        position: absolute;
+        position: relative;
         width: 100%;
         top: 0;
-        top: 650px;
+        top: 30px;
         left: 0;
     }
 }

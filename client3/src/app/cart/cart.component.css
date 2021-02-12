@@ -1,8 +1,6 @@
 .acordion{
     width: 30%;
-    position: absolute;
-    display: inline;
-    
+    position: relative;    
 }
 
 .container {
@@ -11,8 +9,10 @@
 
 @media screen and (max-width: 768px) {
     .container {
+        position: relative;
         width: 100%;
         margin-top: 180px;
+        z-index: 1000;
     }
 }
 
