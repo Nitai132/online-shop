@@ -52,6 +52,20 @@
             </div>
         </div>
     </div>
+    <div class="story-text" *ngIf="selectedCategory === '5fdff02fc5c35c65c4f91e0d'">
+        <h1>
+            .סופר פרויט הוא אתר לדוגמא שנבנה במלואו על ידי ניתאי לאוקס
+        </h1>
+        <h2> .האתר כולו נבנבה בטנכנולוגיות אנגולר ונוד ג'יי אס והוא מתואם למובייל ולמחשב</h2>
+        <h3>
+            .ניתן להרשם לאתר על מנת לחוות את חווית הקנייה המלאה
+        </h3>
+    </div>
+    <div class="story-text" *ngIf="selectedCategory === '5ffeaed424408d417c874640'">
+        <h1>
+            סופר פרויט הינו אתר לדוגמא שנבנה על ידי ניתאי לאוקס. הנני עובד בכל חלקי הארץ ומתגורר בתל אביב
+        </h1>
+    </div>
     <div *ngIf = "filteredArray.length != products.length">
         <div class ="card" *ngFor="let prod of filteredArray">
             <div class="column">

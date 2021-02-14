@@ -1,5 +1,5 @@
 <div *ngIf="deviceXs === true" id="phone-number-mobile">
-    <a href="tel:052-2222-222" id="phone-number-text-mobile"><h3 class="phone-number-header">052-2222-222</h3></a>
+    <a href="tel:052-2234-047" id="phone-number-text-mobile"><h3 class="phone-number-header">חייג 052-2234-047</h3></a>
  </div>
      <mat-toolbar class="toolBar row" >
          <form class="login-form" *ngIf="!userDetails.firstName">
@@ -43,7 +43,7 @@
              <img src="/img/whatsapp.png" class="WA-Img">
          </button>
          <div *ngIf="deviceXs === false" id="phone-number">
-             <span id="phone-number-pc">להזמנות בטל' 052-22222222</span>
+             <span id="phone-number-pc">להזמנות בטל' 052-2234047</span>
          </div>
      </mat-toolbar>
      <app-products *ngIf="deviceXs === false" (unsignedProductAdded)="unsignedCartUpdated($event)" (productAdded)="addProductToCart($event)" (productEdit)="editProduct($event)" [deviceXs]="deviceXs" [isAdmin]="userDetails.isAdmin"></app-products>

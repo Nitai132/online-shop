@@ -87,11 +87,11 @@ export class MainPageComponent implements OnInit {
   };
 
   openIG() {
-    window.open("//" + 'www.instagram.com/super_fruit_israel/', '_blank');
+    window.open("//" + 'www.instagram.com/nitai_luyckx/', '_blank');
   }
 
   openFB() {
-    window.open("//" + 'www.facebook.com/Fruits-Co-109454277622361', '_blank');
+    window.open("//" + 'www.facebook.com/nitai.bbh/', '_blank');
   }
 
   editProduct(editDetailsObj) {
