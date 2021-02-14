@@ -27,11 +27,11 @@ app.use(express.static("client3/dist/client3"));
 app.use(fileUpload());
 
 app.use(session({
-    secret: 'Nitai_Luyckx!$@#$',
+    secret: '*****',
     resave: false,
     saveUninitialized: false,
     store: new MongoDBStore({   
-        uri: 'mongodb+srv://nitai:nitai@cluster0.hgigh.mongodb.net/FruitCart',
+        uri: '******',
         collection: 'mySessions'
     }),
     cookie: {
@@ -86,7 +86,7 @@ app.use('/api/orders', ordersController);
   
 const init = async () => {
     try {
-        await mongoose.connect('mongodb+srv://nitai:nitai@cluster0.hgigh.mongodb.net/FruitCart', {
+        await mongoose.connect('****', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useFindAndModify: false,
